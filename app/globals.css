@@ -35,13 +35,9 @@
     color: #ffffff;
   }
 
-  .nav-underline {
-    @apply absolute bottom-0 left-0 h-0.5 w-0 transition-[width] duration-300;
+  .nav-pill.active {
     background-color: var(--brand-light);
-  }
-
-  .nav-link:hover .nav-underline {
-    width: 100%;
+    color: #ffffff;
   }
 
   .craft-underline {

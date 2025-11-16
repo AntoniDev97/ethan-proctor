@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="relative top-0 left-0 w-full z-10 py-6 bg-white">
+    <header className="relative top-0 left-0 w-full z-50 py-6 bg-white">
       <Container className="flex justify-between items-center">
         {/* Logo */}
         <Link href="/" aria-label="Home" className="flex items-center gap-4">
@@ -34,15 +34,14 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10">
+        <nav className="hidden md:flex items-center space-x-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="nav-link relative group text-sm font-bold uppercase tracking-widest text-black pb-1"
+              className="nav-pill px-6 py-2 text-sm font-normal uppercase tracking-widest text-black rounded-full transition-all duration-300 hover:bg-[#8e8879] hover:text-white"
             >
               {link.name}
-              <span className="nav-underline"></span>
             </Link>
           ))}
         </nav>
@@ -51,39 +50,38 @@ const Header = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-black focus:outline-none"
+            className="text-black focus:outline-none w-8 h-8 flex flex-col justify-center items-center gap-1.5"
             aria-label="Toggle menu"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {isMenuOpen ? (
+            {isMenuOpen ? (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
                   d="M6 18L18 6M6 6l12 12"
                 />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              )}
-            </svg>
+              </svg>
+            ) : (
+              <>
+                <span className="w-6 h-0.5 bg-black"></span>
+                <span className="w-6 h-0.5 bg-black"></span>
+                <span className="w-6 h-0.5 bg-black"></span>
+              </>
+            )}
           </button>
         </div>
       </Container>
 
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-brand-dark shadow-lg">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-40 border-t border-gray-200">
           <Container>
             <nav className="flex flex-col space-y-6 py-8">
               {navLinks.map((link) => (
@@ -91,7 +89,7 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)} // Close menu on click
-                  className="text-lg uppercase tracking-widest text-white text-center hover:text-brand-light transition-colors"
+                  className="text-lg uppercase tracking-widest text-black text-center hover:text-[#8e8879] transition-colors font-normal"
                 >
                   {link.name}
                 </Link>

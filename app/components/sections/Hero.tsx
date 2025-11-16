@@ -1,41 +1,43 @@
 // components/sections/Hero.tsx
 
+import Image from "next/image";
 import Container from "../layout/Container";
 
 const Hero = () => {
   return (
-    <section className="pt-48 pb-32">
+    <section className="pt-10 pb-10 md:pt-20 md:pb-20">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Left: Text */}
-          <div className="text-white">
-            <h1
-              className="text-8xl lg:text-9xl font-black uppercase leading-none tracking-tight -mb-6 lg:-mb-8"
-              style={{ fontFamily: '"din-2014", sans-serif' }}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
+          {/* Left: The_Craft.webp replacing headline text */}
+          <div className="text-white flex justify-center">
+            <div
+              className="relative w-full max-w-[735px]"
+              style={{ aspectRatio: "735 / 506" }}
             >
-              FOR THE
-              <br />
-              LOVE OF
-            </h1>
-            <p
-              className="text-8xl lg:text-9xl font-bold mt-2 leading-none"
-              style={{
-                fontFamily: "var(--font-dancing-script), cursive",
-                fontStyle: "italic",
-              }}
-            >
-              The <span className="craft-underline">Craft</span>
-            </p>
+              <Image
+                src="/homepage/The_Craft.webp"
+                alt="For the Love of The Craft typography"
+                fill
+                priority
+                sizes="(max-width: 768px) 90vw, 735px"
+                className="object-contain"
+              />
+            </div>
           </div>
 
-          {/* Right: Image */}
-          <div className="relative">
-            <div className="bg-gray-700 rounded-lg w-full aspect-square flex items-center justify-center relative">
-              <span className="text-gray-500 text-lg">Image Placeholder</span>
-              {/* Small slash graphics in top-right */}
-              <div className="absolute top-6 right-6 text-white text-3xl font-light opacity-40">
-                {`//`}
-              </div>
+          {/* Right: Ethan.webp replacing placeholder */}
+          <div className="relative flex justify-center">
+            <div
+              className="relative rounded-xl overflow-hidden shadow-2xl transform rotate-3 w-full max-w-[730px]"
+              style={{ aspectRatio: "730 / 630" }}
+            >
+              <Image
+                src="/homepage/Ethan_Proctor.webp"
+                alt="Portrait of Ethan Proctor"
+                fill
+                sizes="(max-width: 768px) 90vw, 730px"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
