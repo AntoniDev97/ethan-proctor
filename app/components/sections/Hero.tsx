@@ -11,15 +11,15 @@ const Hero = () => {
           {/* Left: The_Craft.webp replacing headline text */}
           <div className="text-white flex justify-center">
             <div
-              className="relative w-full max-w-[735px]"
-              style={{ aspectRatio: "735 / 506" }}
+              className="relative w-full max-w-[860px]"
+              style={{ aspectRatio: "725 / 613" }}
             >
               <Image
-                src="/homepage/The_Craft.webp"
-                alt="For the Love of The Craft typography"
+                src="/homepage/Homepage_Typography_Craft.webp"
+                alt="Passion For The Craft typography"
                 fill
                 priority
-                sizes="(max-width: 768px) 90vw, 735px"
+                sizes="(max-width: 768px) 95vw, 860px"
                 className="object-contain"
               />
             </div>
@@ -28,14 +28,14 @@ const Hero = () => {
           {/* Right: Ethan.webp replacing placeholder */}
           <div className="relative flex justify-center">
             <div
-              className="relative rounded-xl overflow-hidden shadow-2xl transform rotate-3 w-full max-w-[730px]"
-              style={{ aspectRatio: "730 / 630" }}
+              className="relative rounded-xl overflow-hidden shadow-2xl transform w-full max-w-[725px]"
+              style={{ aspectRatio: "725 / 613" }}
             >
               <Image
-                src="/homepage/Ethan_Proctor.webp"
+                src="/homepage/Ethan_Proctor_Home.webp"
                 alt="Portrait of Ethan Proctor"
                 fill
-                sizes="(max-width: 768px) 90vw, 730px"
+                sizes="(max-width: 768px) 90vw, 725px"
                 className="object-cover"
               />
             </div>

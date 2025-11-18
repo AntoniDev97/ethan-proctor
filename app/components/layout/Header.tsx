@@ -39,7 +39,11 @@ const Header = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="nav-pill px-6 py-2 text-sm font-normal uppercase tracking-widest text-black rounded-full transition-all duration-300 hover:bg-[#8e8879] hover:text-white"
+              className="nav-pill px-6 py-2 font-semibold tracking-widest text-black rounded-full transition-all duration-300 hover:bg-[#8e8879] hover:text-white"
+              style={{
+                fontFamily: '"din-2014", sans-serif',
+                fontSize: "1.2rem",
+              }}
             >
               {link.name}
             </Link>
@@ -89,7 +93,11 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)} // Close menu on click
-                  className="text-lg uppercase tracking-widest text-black text-center hover:text-[#8e8879] transition-colors font-normal"
+                  className="tracking-widest text-black text-center hover:text-[#8e8879] transition-colors font-semibold"
+                  style={{
+                    fontFamily: '"din-2014", sans-serif',
+                    fontSize: "1.2rem",
+                  }}
                 >
                   {link.name}
                 </Link>
