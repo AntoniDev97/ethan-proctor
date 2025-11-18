@@ -11,7 +11,7 @@ const Hero = () => {
           {/* Left: The_Craft.webp replacing headline text */}
           <div className="text-white flex justify-center">
             <div
-              className="relative w-full max-w-[860px]"
+              className="relative w-full max-w-[900px] overflow-hidden"
               style={{ aspectRatio: "725 / 613" }}
             >
               <Image
@@ -19,7 +19,7 @@ const Hero = () => {
                 alt="Passion For The Craft typography"
                 fill
                 priority
-                sizes="(max-width: 768px) 95vw, 860px"
+                sizes="(max-width: 768px) 95vw, 900px"
                 className="object-contain"
               />
             </div>

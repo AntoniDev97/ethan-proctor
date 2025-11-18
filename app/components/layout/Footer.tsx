@@ -17,7 +17,7 @@ const Footer = () => {
           >
             Get in Touch
           </h2>
-          <div className="flex flex-col md:flex-row md:flex-wrap justify-between md:items-center gap-6 md:gap-8">
+          <div className="flex flex-col md:flex-row md:flex-wrap justify-between md:items-center gap-6 md:gap-10">
             <div className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 flex items-center justify-center text-white">
               <Image
                 src="/Arrow.svg"
@@ -27,7 +27,7 @@ const Footer = () => {
                 className="w-full h-full invert rotate-90 md:rotate-0"
               />
             </div>
-            <nav className="flex flex-col md:flex-row md:flex-wrap md:items-center gap-3 md:gap-6 lg:gap-8">
+            <nav className="flex flex-col md:flex-row md:flex-wrap md:items-center gap-6 md:gap-16 lg:gap-20">
               <a
                 href="https://instagram.com"
                 target="_blank"

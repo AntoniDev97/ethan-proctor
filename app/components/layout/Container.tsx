@@ -10,7 +10,7 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps> = ({ children, className = "" }) => {
   return (
     <div
-      className={`max-w-[1700px] mx-auto px-6 md:px-10 xl:px-20 ${className}`}
+      className={`max-w-[1800px] mx-auto px-4 md:px-6 xl:px-10 ${className}`}
     >
       {children}
     </div>

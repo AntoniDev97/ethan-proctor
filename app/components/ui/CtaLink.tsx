@@ -17,19 +17,20 @@ const CtaLink: React.FC<CtaLinkProps> = ({
 }) => {
   return (
     <Link
-      href={href}
+        href={href}
+        className={`group inline-flex items-center space-x-4 px-7 py-3 rounded-full font-semibold uppercase text-2xl tracking-[0.08em] hover:opacity-80 transition-opacity ${className}`}
       style={{
         backgroundColor: "#8e8879",
         color: "#161616",
+        fontFamily: '"din-2014", sans-serif',
       }}
-      className={`group inline-flex items-center space-x-3 px-6 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:opacity-80 transition-opacity ${className}`}
     >
-      <span className="flex items-center justify-center w-4 h-4">
-        <Image
-          src="/Arrow.svg"
-          alt="Arrow icon"
-          width={16}
-          height={16}
+      <span className="flex items-center justify-center w-7 h-7">
+          <Image
+            src="/Arrow.svg"
+            alt="Arrow icon"
+            width={24}
+            height={24}
           className="w-full h-full"
         />
       </span>
