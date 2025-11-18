@@ -11,8 +11,8 @@ const AboutIntro = () => {
           Who is this guy?
         </h3>
         <p
-          className="text-black mb-10 leading-snug font-semibold"
-          style={{ fontFamily: '"din-2014", sans-serif', fontSize: "2.8rem" }}
+          className="text-black mb-10 leading-snug font-semibold text-[1.75rem] md:text-[2.8rem]"
+          style={{ fontFamily: '"din-2014", sans-serif' }}
         >
           I&apos;m Ethan, a designer with a passion for all things branding.
           Specialising in logo design, I&apos;ve spent years developing my craft
