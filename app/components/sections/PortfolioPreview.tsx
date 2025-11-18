@@ -1,18 +1,31 @@
 // components/sections/PortfolioPreview.tsx
 
 import Link from "next/link";
+import Image from "next/image";
 import Container from "../layout/Container";
 import CtaLink from "../ui/CtaLink";
 
-// TODO: Create these images in your '/public' folder
 const projects = [
   {
     id: 1,
-    alt: "The More, The Furries billboard",
+    alt: "Fletch Play project header",
+    src: "/homepage/Fletch_Play_Project_Header.webp",
   },
-  { id: 2, alt: "Brighten your day card" },
-  { id: 3, alt: "Foxwhelp logo" },
-  { id: 4, alt: "Imp Ast stickers" },
+  {
+    id: 2,
+    alt: "Reflections project header",
+    src: "/homepage/Reflections_Project_Header.webp",
+  },
+  {
+    id: 3,
+    alt: "HTS project header",
+    src: "/homepage/HTS_Project_Header.webp",
+  },
+  {
+    id: 4,
+    alt: "Impact project header",
+    src: "/homepage/Impact_Project_Header.webp",
+  },
 ];
 
 const PortfolioPreview = () => {
@@ -23,10 +36,19 @@ const PortfolioPreview = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`}>
-              <div className="rounded-lg overflow-hidden group bg-gray-700 aspect-square flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity">
-                <span className="text-gray-500 text-center px-4">
-                  {project.alt}
-                </span>
+              <div className="rounded-lg overflow-hidden group bg-black cursor-pointer hover:opacity-90 transition-opacity">
+                <div
+                  className="relative w-full"
+                  style={{ aspectRatio: "834 / 550" }}
+                >
+                  <Image
+                    src={project.src}
+                    alt={project.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 834px"
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </Link>
           ))}
