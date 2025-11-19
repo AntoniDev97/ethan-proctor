@@ -1,0 +1,79 @@
+import Image from "next/image";
+import Link from "next/link";
+import Container from "../components/layout/Container";
+
+const projects = [
+  {
+    id: "hts",
+    title: "HTS",
+    src: "/projects/HTS_projects_page.webp",
+  },
+  {
+    id: "impact",
+    title: "Impact",
+    src: "/projects/impact_projects_page.webp",
+  },
+  {
+    id: "foxhwelp",
+    title: "Foxhwelp",
+    src: "/projects/foxhwelp_projects_page.webp",
+  },
+  {
+    id: "fletch-play",
+    title: "Fletch Play",
+    src: "/projects/fletch_play_projects_page.webp",
+  },
+  {
+    id: "salacia",
+    title: "Salacia",
+    src: "/projects/salacia_project_page.webp",
+  },
+  {
+    id: "caprisun",
+    title: "Capri Sun",
+    src: "/projects/caprisun_project_page.webp",
+  },
+  {
+    id: "247",
+    title: "247",
+    src: "/projects/247_projects_page.webp",
+  },
+  {
+    id: "dcreflections",
+    title: "Reflections",
+    src: "/projects/reflections_projects_page.webp",
+  },
+  {
+    id: "xmas-window",
+    title: "Xmas Window",
+    src: "/projects/xmas_window_projects_page.webp",
+  },
+];
+
+export default function ProjectsPage() {
+  return (
+    <div className="bg-brand-dark min-h-screen py-20">
+      <Container>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projects.map((project) => (
+            <Link
+              key={project.id}
+              href={`/projects/${project.id}`}
+              className="block group"
+            >
+              <div className="relative w-full aspect-square overflow-hidden rounded-lg">
+                <Image
+                  src={project.src}
+                  alt={`${project.title} Project`}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
+}

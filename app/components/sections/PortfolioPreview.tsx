@@ -7,22 +7,22 @@ import CtaLink from "../ui/CtaLink";
 
 const projects = [
   {
-    id: 1,
+    id: "fletch-play",
     alt: "Fletch Play project header",
     src: "/homepage/Fletch_Play_Project_Header.webp",
   },
   {
-    id: 2,
+    id: "dcreflections",
     alt: "Reflections project header",
     src: "/homepage/Reflections_Project_Header.webp",
   },
   {
-    id: 3,
+    id: "hts",
     alt: "HTS project header",
     src: "/homepage/HTS_Project_Header.webp",
   },
   {
-    id: 4,
+    id: "impact",
     alt: "Impact project header",
     src: "/homepage/Impact_Project_Header.webp",
   },
