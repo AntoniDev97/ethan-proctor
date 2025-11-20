@@ -14,7 +14,8 @@ export default {
         "brand-gray": "#3A3A3A",
       },
       fontFamily: {
-        heading: ["var(--font-din)", "sans-serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
+        heading: ['"din-2014"', "sans-serif"],
         script: ["var(--font-dancing-script)", "cursive"],
       },
     },
