@@ -41,7 +41,7 @@ export default function AboutPage() {
 
         {/* White Section: In The Making & Transition */}
         <div className="w-full bg-white text-brand-dark py-[80px]">
-          <div className="max-w-[1712px] mx-auto px-6 md:px-0">
+          <div className="max-w-[1532px] mx-auto px-6 md:px-0">
             {/* In The Making */}
             <div className="flex flex-col md:flex-row gap-12 md:gap-[80px] items-start mb-[80px]">
               <div className="relative w-full md:w-[522px] aspect-[522/791] flex-shrink-0">
@@ -56,19 +56,20 @@ export default function AboutPage() {
                 <h2 className="text-5xl md:text-7xl font-extrabold mb-8 uppercase tracking-wide text-black">
                   In the Making
                 </h2>
-                <div className="space-y-6 text-black text-3xl md:text-[2.8rem] leading-tight font-semibold">
-                  <p>
-                    I've spent most of my life in the rurals of North Yorkshire,
-                    with a mild golfing addiction that I can't seem to shake.
-                    Undecided on what I wanted to pursue, I took on an
-                    Accounting course at university but a small part of me craved
-                    creativity.
+                <div className="space-y-6 text-black text-3xl md:text-[2.2rem] leading-snug font-semibold">
+                  <p>I’ve spent most of my life in the rurals of North Yorkshire,
+                    with a mild golfing addiction that I can’t seem to shake. Undecided on
+                    what I wanted to pursue, I took on Accounting at university but a small
+                    part of me craved creativity.
                   </p>
                   <p>
-                    I eventually took up logo designing for close friends and
-                    family, with zero experience and learning how to use Adobe
-                    Illustrator from videos and case studies in my spare time.
+                    I eventually took up logo designing for close friends and family,
+                    with zero experience and learning how to use Adobe Illustrator from
+                    videos and case studies in my spare time.
                   </p>
+                  <p>That curiosity quickly turned into dedication that outpaced my other hobbies.
+                    My handicap remained a work in progress whilst my command of the pen tool improved
+                    significantly, it was then I knew I found the right course for me.</p>
                 </div>
               </div>
             </div>
@@ -76,17 +77,16 @@ export default function AboutPage() {
             {/* Transition Section */}
             <div className="flex flex-col md:flex-row gap-12 md:gap-[80px] items-center">
               <div className="flex-1 order-2 md:order-1">
-                <div className="space-y-6 text-black text-3xl md:text-[2.8rem] leading-tight font-semibold">
+                <div className="space-y-6 text-black text-3xl md:text-[2.2rem] leading-snug font-semibold">
                   <p>
-                    Taking it more seriously, I decided to change my Accounting
-                    course at Northumbria University to Graphic Design and chase a
-                    life of brand design and never looked back.
+                    Deciding to turn that passion into profession, I decided to change my degree at
+                    Northumbria University from Accounting to Graphic Design and chase a life of
+                    branding and never looked back.
                   </p>
                   <p>
-                    I took advantage of every opportunity that popped up,
-                    listening to the experts, gaining an understanding of the
-                    creative world and even stayed on at Northumbria University
-                    for a design internship once my course finished.
+                    I took advantage of every opportunity that popped up, listening to the experts,
+                    gaining an understanding of the creative world and even stayed on at Northumbria
+                    University for a design internship once my course had come to an end.
                   </p>
                 </div>
               </div>
