@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Container from "../components/layout/Container";
+import Container from "@/app/components/layout/Container";
 
 const projects = [
   {
@@ -61,7 +61,7 @@ export default function ProjectsPage() {
               href={`/projects/${project.id}`}
               className="block group"
             >
-              <div className="relative w-full aspect-square overflow-hidden rounded-lg">
+              <div className="relative w-full aspect-square overflow-hidden rounded-xl">
                 <Image
                   src={project.src}
                   alt={`${project.title} Project`}

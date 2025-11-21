@@ -9,7 +9,9 @@ const Hero = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
           {/* Left: The_Craft.webp replacing headline text */}
-          <div className="text-white flex justify-center">
+          <div className="text-white flex justify-center flex-col items-center">
+            {/* Hidden H1 for SEO */}
+            <h1 className="sr-only">Ethan Proctor - Graphic Designer & Brand Identity Specialist</h1>
             <div
               className="relative w-full max-w-[900px] overflow-hidden"
               style={{ aspectRatio: "725 / 613" }}
