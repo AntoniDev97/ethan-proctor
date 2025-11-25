@@ -14,9 +14,9 @@ const projects = [
     src: "/projects/impact_projects_page.webp",
   },
   {
-    id: "foxhwelp",
-    title: "Foxhwelp",
-    src: "/projects/foxhwelp_projects_page.webp",
+    id: "foxwhelp",
+    title: "Foxwhelp",
+    src: "/projects/foxwhelp_projects_page.webp",
   },
   {
     id: "fletch-play",
