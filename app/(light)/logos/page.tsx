@@ -8,26 +8,30 @@ export default function LogosPage() {
   return (
     <div className="bg-white min-h-screen font-heading pb-20">
       {/* Logos Grid Section */}
-      <div className="pt-12 md:pt-20">
+      <div className="pt-10">
         <Container>
-          {/* Grid of logos - 4 columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {logoNumbers.map((num) => (
-              <div
-                key={num}
-                className="relative w-full aspect-square max-w-[350px] mx-auto"
-              >
-                <div className="w-full h-full p-8 flex items-center justify-center bg-white">
-                  <Image
-                    src={`/logos/logo${num}.svg`}
-                    alt={`Logo ${num}`}
-                    width={350}
-                    height={350}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
+            <div className="md:col-start-2 md:col-span-10">
+              {/* Grid of logos - 4 columns */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+                {logoNumbers.map((num) => (
+                  <div
+                    key={num}
+                    className="relative w-full aspect-square"
+                  >
+                    <div className="w-full h-full p-5 flex items-center justify-center bg-white">
+                      <Image
+                        src={`/logos/logo${num}.svg`}
+                        alt={`Logo ${num}`}
+                        width={350}
+                        height={350}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </Container>
       </div>
