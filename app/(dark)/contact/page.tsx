@@ -45,7 +45,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="flex flex-col gap-12">
           {/* Header Section */}
           <div className="space-y-6">

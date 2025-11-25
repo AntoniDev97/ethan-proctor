@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Container from "@/app/components/layout/Container";
 
 export default function LogosPage() {
   // Generate array of logo numbers 1-20
@@ -7,8 +8,8 @@ export default function LogosPage() {
   return (
     <div className="bg-white min-h-screen font-heading pb-20">
       {/* Logos Grid Section */}
-      <div className="w-full flex flex-col items-center pt-12 md:pt-20 px-4">
-        <div className="w-full max-w-[1676px]">
+      <div className="pt-12 md:pt-20">
+        <Container>
           {/* Grid of logos - 4 columns */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {logoNumbers.map((num) => (
@@ -28,7 +29,7 @@ export default function LogosPage() {
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );
