@@ -29,8 +29,8 @@ const projects = [
     src: "/projects/salacia_project_page.webp",
   },
   {
-    id: "caprisun",
-    title: "Capri Sun",
+    id: "CapriSun",
+    title: "CapriSun",
     src: "/projects/caprisun_project_page.webp",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     id: "dcreflections",
-    title: "Reflections",
+    title: "DCReflections",
     src: "/projects/reflections_projects_page.webp",
   },
   {

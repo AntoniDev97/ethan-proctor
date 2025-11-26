@@ -9,7 +9,7 @@ export default function SalaciaPage() {
           {/* Hero Image */}
           <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
             <Image
-              src="/projects/salicia/salacia1.webp"
+              src="/projects/salacia/salacia1.webp"
               alt="Salacia 1872 Hero"
               fill
               className="object-cover"
@@ -42,7 +42,7 @@ export default function SalaciaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-[#EAE8E4]">
               <Image
-                src="/projects/salicia/salacia2.webp"
+                src="/projects/salacia/salacia2.webp"
                 alt="Salacia Logo"
                 fill
                 className="object-contain p-20"
@@ -50,7 +50,7 @@ export default function SalaciaPage() {
             </div>
             <div className="relative w-full aspect-square overflow-hidden rounded-xl">
               <Image
-                src="/projects/salicia/salacia3.webp"
+                src="/projects/salacia/salacia3.webp"
                 alt="Salacia Display"
                 fill
                 className="object-cover"
@@ -61,7 +61,7 @@ export default function SalaciaPage() {
           {/* Full Width Image */}
           <div className="relative w-full aspect-video overflow-hidden rounded-xl">
             <Image
-              src="/projects/salicia/salacia4.webp"
+              src="/projects/salacia/salacia4.webp"
               alt="Salacia Bottles"
               fill
               className="object-cover"
@@ -84,7 +84,7 @@ export default function SalaciaPage() {
           {/* Full Width Image (Sketches) */}
           <div className="relative w-full aspect-video overflow-hidden rounded-xl">
             <Image
-              src="/projects/salicia/salacia5.webp"
+              src="/projects/salacia/salacia5.webp"
               alt="Salacia Sketches"
               fill
               className="object-cover"
