@@ -94,7 +94,7 @@ export default function SalaciaPage() {
           {/* Footer Image */}
           <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
              <Image
-              src="/projects/salicia/salacia6.webp"
+              src="/projects/salacia/salacia6.webp"
               alt="Salacia Lineup"
               fill
               className="object-cover"

@@ -34,8 +34,8 @@ const projects = [
     src: "/projects/caprisun_project_page.webp",
   },
   {
-    id: "247",
-    title: "247",
+    id: "TwentyFourSeven",
+    title: "TwentyFourSeven",
     src: "/projects/247_projects_page.webp",
   },
   {
@@ -48,6 +48,7 @@ const projects = [
     title: "Xmas Window",
     src: "/projects/xmas_window_projects_page.webp",
   },
+
 ];
 
 export default function ProjectsPage() {

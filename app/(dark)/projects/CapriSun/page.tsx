@@ -9,7 +9,7 @@ export default function CapriSunPage() {
           {/* Hero Image */}
           <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
             <Image
-              src="/projects/CapriSun/caprisun1.webp"
+              src="/projects/capriSun/caprisun1.webp"
               alt="Capri-Sun Hero"
               fill
               className="object-cover"
@@ -51,7 +51,7 @@ export default function CapriSunPage() {
           {/* Full Width Image 1 */}
           <div className="relative w-full aspect-video overflow-hidden rounded-xl">
             <Image
-              src="/projects/CapriSun/caprisun2.webp"
+              src="/projects/capriSun/caprisun2.webp"
               alt="Capri-Sun Pouch"
               fill
               className="object-cover"
@@ -61,7 +61,7 @@ export default function CapriSunPage() {
            {/* Full Width Image 2 */}
            <div className="relative w-full aspect-video overflow-hidden rounded-xl">
             <Image
-              src="/projects/CapriSun/caprisun3.webp"
+              src="/projects/capriSun/caprisun3.webp"
               alt="Capri-Sun Box and Pouches"
               fill
               className="object-cover"
@@ -84,7 +84,7 @@ export default function CapriSunPage() {
           {/* Footer Image */}
           <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
              <Image
-              src="/projects/CapriSun/caprisun4.webp"
+              src="/projects/capriSun/caprisun4.webp"
               alt="Capri-Sun Banner"
               fill
               className="object-cover"
