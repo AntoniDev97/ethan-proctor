@@ -7,12 +7,14 @@ export default function ImpactPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/impact/impact1.webp"
               alt="Impact Mini-Golf Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -39,12 +41,14 @@ export default function ImpactPage() {
           </div>
 
           {/* Full Width Image */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/impact/impact2.webp"
               alt="Impact App UI"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -93,12 +97,14 @@ export default function ImpactPage() {
           </div>
 
           {/* Footer Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
              <Image
               src="/projects/impact/impact5.webp"
               alt="Impact Booklet"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>

@@ -7,12 +7,14 @@ export default function ChristmasWindowPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/christmasWindow/window1.webp"
               alt="Christmas Window Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>

@@ -7,12 +7,14 @@ export default function DegreeShowPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/TwentyFourSeven/degreeshow1.webp"
               alt="Degree Show Posters"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -40,12 +42,14 @@ export default function DegreeShowPage() {
           </div>
 
           {/* Full Width Image 1 */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/TwentyFourSeven/degreeshow2.webp"
               alt="Degree Show Team"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -63,12 +67,14 @@ export default function DegreeShowPage() {
           </div>
 
           {/* Full Width Image 2 */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/TwentyFourSeven/degreeshow3.webp"
               alt="Degree Show App"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -127,12 +133,14 @@ export default function DegreeShowPage() {
           </div>
 
           {/* Footer Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
              <Image
               src="/projects/TwentyFourSeven/degreeshow8.webp"
               alt="Degree Show Booklet"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>

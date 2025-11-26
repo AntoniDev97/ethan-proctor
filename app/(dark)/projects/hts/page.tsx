@@ -7,12 +7,14 @@ export default function HTSPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/hts/hts1.webp"
               alt="HTS Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -72,22 +74,26 @@ export default function HTSPage() {
           </div>
 
           {/* Full Width Image */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/hts/hts4.webp"
               alt="HTS T-Shirt"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
           {/* Footer Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
              <Image
               src="/projects/hts/hts5.webp"
               alt="HTS Truck"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>

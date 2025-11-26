@@ -7,12 +7,14 @@ export default function SalaciaPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/salacia/salacia1.webp"
               alt="Salacia 1872 Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -59,12 +61,14 @@ export default function SalaciaPage() {
           </div>
 
           {/* Full Width Image */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/salacia/salacia4.webp"
               alt="Salacia Bottles"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -82,22 +86,26 @@ export default function SalaciaPage() {
           </div>
 
           {/* Full Width Image (Sketches) */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/salacia/salacia5.webp"
               alt="Salacia Sketches"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
           {/* Footer Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
              <Image
               src="/projects/salacia/salacia6.webp"
               alt="Salacia Lineup"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>

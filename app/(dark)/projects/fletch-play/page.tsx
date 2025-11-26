@@ -7,12 +7,14 @@ export default function FletchPlayPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/fetchPlay/fletchPlay1.webp"
               alt="Fletch & Play Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -39,12 +41,14 @@ export default function FletchPlayPage() {
           </div>
 
           {/* Billboard Image */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/fetchPlay/fletchPlay2.webp"
               alt="Fletch & Play Billboard"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -84,12 +88,14 @@ export default function FletchPlayPage() {
           </div>
 
           {/* Mobile Screens */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl bg-[#EAE8E4]">
+          <div className="w-full bg-[#EAE8E4] rounded-xl">
              <Image
               src="/projects/fetchPlay/fletchPlay5.webp"
               alt="Fletch & Play Mobile Screens"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>

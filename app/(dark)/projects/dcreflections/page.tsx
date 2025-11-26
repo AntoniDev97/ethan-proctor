@@ -7,12 +7,14 @@ export default function DCReflectionsPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/dcreflections/dcreflections1.webp"
               alt="DC Reflections Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -38,12 +40,14 @@ export default function DCReflectionsPage() {
           </div>
 
           {/* Full Width Image */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/dcreflections/dcreflections2.webp"
               alt="DC Reflections Business Card"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -80,12 +84,14 @@ export default function DCReflectionsPage() {
           </div>
 
           {/* Footer Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
              <Image
               src="/projects/dcreflections/dcreflections5.webp"
               alt="DC Reflections Overlay"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>

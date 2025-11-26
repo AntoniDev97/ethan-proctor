@@ -7,12 +7,14 @@ export default function CapriSunPage() {
       <Container>
         <div className="space-y-20">
           {/* Hero Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/capriSun/caprisun1.webp"
               alt="Capri-Sun Hero"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
               priority
             />
           </div>
@@ -49,22 +51,26 @@ export default function CapriSunPage() {
           </div>
 
           {/* Full Width Image 1 */}
-          <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+          <div className="w-full">
             <Image
               src="/projects/capriSun/caprisun2.webp"
               alt="Capri-Sun Pouch"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
            {/* Full Width Image 2 */}
-           <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+           <div className="w-full">
             <Image
               src="/projects/capriSun/caprisun3.webp"
               alt="Capri-Sun Box and Pouches"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
 
@@ -82,12 +88,14 @@ export default function CapriSunPage() {
           </div>
 
           {/* Footer Image */}
-          <div className="relative w-full aspect-video md:aspect-[2/1] overflow-hidden rounded-xl">
+          <div className="w-full">
              <Image
               src="/projects/capriSun/caprisun4.webp"
               alt="Capri-Sun Banner"
-              fill
-              className="object-cover"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-auto rounded-xl"
             />
           </div>
         </div>
