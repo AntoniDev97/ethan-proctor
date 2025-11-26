@@ -44,8 +44,8 @@ const projects = [
     src: "/projects/reflections_projects_page.webp",
   },
   {
-    id: "xmas-window",
-    title: "Xmas Window",
+    id: "christmas-window",
+    title: "Christmas Window",
     src: "/projects/xmas_window_projects_page.webp",
   },
 
