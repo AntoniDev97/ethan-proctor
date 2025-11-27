@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Container from "../components/layout/Container";
+import Container from "@/app/components/layout/Container";
 
 const projects = [
   {
@@ -14,9 +14,9 @@ const projects = [
     src: "/projects/impact_projects_page.webp",
   },
   {
-    id: "foxhwelp",
-    title: "Foxhwelp",
-    src: "/projects/foxhwelp_projects_page.webp",
+    id: "foxwhelp",
+    title: "Foxwhelp",
+    src: "/projects/foxwhelp_projects_page.webp",
   },
   {
     id: "fletch-play",
@@ -29,25 +29,26 @@ const projects = [
     src: "/projects/salacia_project_page.webp",
   },
   {
-    id: "caprisun",
-    title: "Capri Sun",
+    id: "CapriSun",
+    title: "CapriSun",
     src: "/projects/caprisun_project_page.webp",
   },
   {
-    id: "247",
-    title: "247",
+    id: "TwentyFourSeven",
+    title: "TwentyFourSeven",
     src: "/projects/247_projects_page.webp",
   },
   {
     id: "dcreflections",
-    title: "Reflections",
+    title: "DCReflections",
     src: "/projects/reflections_projects_page.webp",
   },
   {
-    id: "xmas-window",
-    title: "Xmas Window",
+    id: "christmas-window",
+    title: "Christmas Window",
     src: "/projects/xmas_window_projects_page.webp",
   },
+
 ];
 
 export default function ProjectsPage() {
@@ -61,7 +62,7 @@ export default function ProjectsPage() {
               href={`/projects/${project.id}`}
               className="block group"
             >
-              <div className="relative w-full aspect-square overflow-hidden rounded-lg">
+              <div className="relative w-full aspect-square overflow-hidden">
                 <Image
                   src={project.src}
                   alt={`${project.title} Project`}

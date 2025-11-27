@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351.27 351.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #161616;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      
+      <g>
+        <g>
+          <path class="cls-2" d="M82.6,96.51l67.17,67.17c1.04,1.04,1.63,2.45,1.63,3.93v13.58c0,1.47-.59,2.89-1.63,3.93l-67.17,67.17c-1.36,1.36-1.36,3.55,0,4.91l11.25,11.25c1.36,1.36,3.55,1.36,4.91,0l56.56-56.56c3.05-3.05,4.76-7.18,4.76-11.49v-52.02c0-4.31-1.71-8.44-4.76-11.49l-56.56-56.56c-1.36-1.36-3.55-1.36-4.91,0l-11.25,11.25c-1.36,1.36-1.36,3.55,0,4.91Z"/>
+          <path class="cls-2" d="M270.71,252.3l-67.17-67.17c-1.04-1.04-1.63-2.45-1.63-3.93v-13.58c0-1.47.59-2.89,1.63-3.93l67.17-67.18c1.36-1.36,1.36-3.55,0-4.91l-11.25-11.25c-1.36-1.36-3.55-1.36-4.91,0l-56.56,56.56c-3.05,3.05-4.76,7.18-4.76,11.49v52.02c0,4.31,1.71,8.44,4.76,11.49l56.56,56.56c1.36,1.36,3.55,1.36,4.91,0l11.25-11.25c1.36-1.36,1.36-3.55,0-4.91Z"/>
+        </g>
+        <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-2" x="165.22" y="49.35" width="22.86" height="66.97" rx="3.47" ry="3.47"/>
+        </g>
+        <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-2" x="165.22" y="232.49" width="22.86" height="66.97" rx="3.47" ry="3.47"/>
+        </g>
+        <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-2" x="256.8" y="140.92" width="22.86" height="66.97" rx="3.47" ry="3.47" transform="translate(442.63 -93.82) rotate(90)"/>
+        </g>
+        <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-2" x="73.65" y="140.92" width="22.86" height="66.97" rx="3.47" ry="3.47" transform="translate(259.48 89.33) rotate(90)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

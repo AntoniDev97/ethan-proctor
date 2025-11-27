@@ -20,7 +20,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="relative top-0 left-0 w-full z-50 py-6 bg-white">
+    <header
+      className={`relative top-0 left-0 w-full z-50 py-6 bg-white transition-colors duration-300 ${
+        pathname === "/logos" ? "border-b-2 border-brand-dark" : ""
+      }`}
+    >
       <Container className="flex justify-between items-center">
         {/* Logo */}
         <Link href="/" aria-label="Home" className="flex items-center gap-4">

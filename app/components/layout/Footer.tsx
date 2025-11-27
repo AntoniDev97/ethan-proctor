@@ -66,7 +66,7 @@ const Footer = () => {
               </h3>
               <nav className="flex flex-col gap-2 text-lg text-white/80">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/proccygfx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
@@ -74,7 +74,7 @@ const Footer = () => {
                   Instagram
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/ethan-proctor-gd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
@@ -82,10 +82,10 @@ const Footer = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="mailto:ethan@example.com"
+                  href="mailto:proccygfx@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  Email
+                  proccygfx@gmail.com
                 </a>
               </nav>
             </div>
