@@ -62,7 +62,7 @@ export default function ProjectsPage() {
               href={`/projects/${project.id}`}
               className="block group"
             >
-              <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+              <div className="relative w-full aspect-square overflow-hidden">
                 <Image
                   src={project.src}
                   alt={`${project.title} Project`}

@@ -3,21 +3,22 @@ import Container from "@/app/components/layout/Container";
 
 export default function FletchPlayPage() {
   return (
-    <div className="bg-brand-dark min-h-screen py-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+      {/* Hero Image */}
+      <div className="w-full mb-20">
+        <Image
+          src="/projects/fetchPlay/fletchPlay1.webp"
+          alt="Fletch & Play Hero"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
       <Container>
         <div className="space-y-20">
-          {/* Hero Image */}
-          <div className="w-full">
-            <Image
-              src="/projects/fetchPlay/fletchPlay1.webp"
-              alt="Fletch & Play Hero"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto rounded-xl"
-              priority
-            />
-          </div>
 
           {/* Intro Text */}
           {/* Intro Text */}
@@ -48,13 +49,13 @@ export default function FletchPlayPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
           {/* Grid Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-[#EAE8E4]">
+            <div className="relative w-full aspect-square overflow-hidden bg-[#EAE8E4]">
               <Image
                 src="/projects/fetchPlay/fletchPlay3.webp"
                 alt="Fletch & Play Logo"
@@ -62,7 +63,7 @@ export default function FletchPlayPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/fetchPlay/fletchPlay4.webp"
                 alt="Fletch & Play Bag"
@@ -88,14 +89,14 @@ export default function FletchPlayPage() {
           </div>
 
           {/* Mobile Screens */}
-          <div className="w-full bg-[#EAE8E4] rounded-xl">
+          <div className="w-full bg-[#EAE8E4]">
              <Image
               src="/projects/fetchPlay/fletchPlay5.webp"
               alt="Fletch & Play Mobile Screens"
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
         </div>

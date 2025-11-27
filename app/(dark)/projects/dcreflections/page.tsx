@@ -3,21 +3,22 @@ import Container from "@/app/components/layout/Container";
 
 export default function DCReflectionsPage() {
   return (
-    <div className="bg-brand-dark min-h-screen py-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+      {/* Hero Image */}
+      <div className="w-full mb-20">
+        <Image
+          src="/projects/dcreflections/dcreflections1.webp"
+          alt="DC Reflections Hero"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
       <Container>
         <div className="space-y-20">
-          {/* Hero Image */}
-          <div className="w-full">
-            <Image
-              src="/projects/dcreflections/dcreflections1.webp"
-              alt="DC Reflections Hero"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto rounded-xl"
-              priority
-            />
-          </div>
 
           {/* Intro Text */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
@@ -47,13 +48,13 @@ export default function DCReflectionsPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
           {/* Grid Section 1 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/dcreflections/dcreflections3.webp"
                 alt="DC Reflections Logo"
@@ -61,7 +62,7 @@ export default function DCReflectionsPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/dcreflections/dcreflections4.webp"
                 alt="DC Reflections Window"
@@ -91,7 +92,7 @@ export default function DCReflectionsPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
         </div>

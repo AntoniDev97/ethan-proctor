@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Right: Ethan.webp replacing placeholder */}
           <div className="relative flex justify-center">
             <div
-              className="relative rounded-xl overflow-hidden shadow-2xl transform w-full max-w-[725px]"
+              className="relative overflow-hidden shadow-2xl transform w-full max-w-[725px]"
               style={{ aspectRatio: "725 / 613" }}
             >
               <Image

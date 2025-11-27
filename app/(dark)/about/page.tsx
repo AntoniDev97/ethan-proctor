@@ -5,20 +5,19 @@ export default function AboutPage() {
   return (
     <div className="bg-brand-dark text-white min-h-screen pb-20 font-heading">
       {/* Hero Section */}
-      <div className="pt-12 md:pt-20">
-        <Container>
-          {/* About Me heading moved to intro text */}
-          <div className="relative w-full aspect-[1712/803]">
-            <Image
-              src="/about/sketches_montage_about.webp"
-              alt="Montage of sketches and design work"
-              fill
-              className="object-cover rounded-xl"
-              priority
-            />
-          </div>
-        </Container>
+      <div className="w-full">
+        <div className="relative w-full aspect-[1712/803]">
+          <Image
+            src="/about/sketches_montage_about.webp"
+            alt="Montage of sketches and design work"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
       </div>
+
+
 
       <div>
         {/* Intro Text */}
@@ -58,7 +57,7 @@ export default function AboutPage() {
                   src="/about/golfing_me_about.webp"
                   alt="Young Ethan playing golf"
                   fill
-                  className="object-cover rounded-xl"
+                  className="object-cover"
                 />
               </div>
               <div className="flex-1 pt-8">
@@ -104,7 +103,7 @@ export default function AboutPage() {
                   src="/about/photography_studio_about.webp"
                   alt="Ethan in photography studio"
                   fill
-                  className="object-cover rounded-xl"
+                  className="object-cover"
                 />
               </div>
                 </div>
@@ -143,7 +142,7 @@ export default function AboutPage() {
                 src="/about/shoreditch-highs-street.webp"
                 alt="Shoreditch High Street"
                 fill
-                className="object-cover rounded-xl"
+                className="object-cover"
               />
             </div>
           </Container>

@@ -36,7 +36,7 @@ const PortfolioPreview = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <Link key={project.id} href={`/projects/${project.id}`}>
-              <div className="rounded-xl overflow-hidden group bg-black cursor-pointer hover:opacity-90 transition-opacity">
+              <div className="overflow-hidden group bg-black cursor-pointer hover:opacity-90 transition-opacity">
                 <div
                   className="relative w-full"
                   style={{ aspectRatio: "834 / 550" }}

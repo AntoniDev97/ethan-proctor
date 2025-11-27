@@ -3,21 +3,22 @@ import Container from "@/app/components/layout/Container";
 
 export default function FoxwhelpPage() {
   return (
-    <div className="bg-brand-dark min-h-screen py-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+      {/* Hero Image */}
+      <div className="w-full mb-20">
+        <Image
+          src="/projects/foxwhelp/foxwhelp1.webp"
+          alt="Foxwhelp Hero"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
       <Container>
         <div className="space-y-20">
-          {/* Hero Image */}
-          <div className="w-full">
-            <Image
-              src="/projects/foxwhelp/foxwhelp1.webp"
-              alt="Foxwhelp Hero"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto rounded-xl"
-              priority
-            />
-          </div>
 
           {/* Intro Text */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
@@ -44,7 +45,7 @@ export default function FoxwhelpPage() {
 
           {/* Grid Section 1 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-[3/4] overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp2.webp"
                 alt="Foxwhelp Poster"
@@ -52,7 +53,7 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-[3/4] overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp3.webp"
                 alt="Foxwhelp Sign"
@@ -77,7 +78,7 @@ export default function FoxwhelpPage() {
 
           {/* Grid Section 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp4.webp"
                 alt="Foxwhelp Bottle"
@@ -85,7 +86,7 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp5.webp"
                 alt="Foxwhelp Cans"
@@ -103,7 +104,7 @@ export default function FoxwhelpPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
@@ -122,7 +123,7 @@ export default function FoxwhelpPage() {
 
           {/* Grid Section 3 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp7.webp"
                 alt="Foxwhelp Label Detail"
@@ -130,7 +131,7 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp8.webp"
                 alt="Foxwhelp Pattern"
@@ -148,7 +149,7 @@ export default function FoxwhelpPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
         </div>

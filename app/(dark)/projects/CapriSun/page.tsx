@@ -3,21 +3,22 @@ import Container from "@/app/components/layout/Container";
 
 export default function CapriSunPage() {
   return (
-    <div className="bg-brand-dark min-h-screen py-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+      {/* Hero Image */}
+      <div className="w-full mb-20">
+        <Image
+          src="/projects/capriSun/caprisun1.webp"
+          alt="Capri-Sun Hero"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
       <Container>
         <div className="space-y-20">
-          {/* Hero Image */}
-          <div className="w-full">
-            <Image
-              src="/projects/capriSun/caprisun1.webp"
-              alt="Capri-Sun Hero"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto rounded-xl"
-              priority
-            />
-          </div>
 
           {/* Intro Text */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
@@ -58,7 +59,7 @@ export default function CapriSunPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
@@ -70,7 +71,7 @@ export default function CapriSunPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
@@ -95,7 +96,7 @@ export default function CapriSunPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
         </div>

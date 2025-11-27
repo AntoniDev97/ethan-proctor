@@ -3,21 +3,22 @@ import Container from "@/app/components/layout/Container";
 
 export default function DegreeShowPage() {
   return (
-    <div className="bg-brand-dark min-h-screen py-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+      {/* Hero Image */}
+      <div className="w-full mb-20">
+        <Image
+          src="/projects/TwentyFourSeven/degreeshow1.webp"
+          alt="Degree Show Posters"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
       <Container>
         <div className="space-y-20">
-          {/* Hero Image */}
-          <div className="w-full">
-            <Image
-              src="/projects/TwentyFourSeven/degreeshow1.webp"
-              alt="Degree Show Posters"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="w-full h-auto rounded-xl"
-              priority
-            />
-          </div>
 
           {/* Intro Text */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
@@ -49,7 +50,7 @@ export default function DegreeShowPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
@@ -74,13 +75,13 @@ export default function DegreeShowPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
 
           {/* Grid Section 1 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/TwentyFourSeven/degreeshow4.webp"
                 alt="Degree Show Photo Booth"
@@ -88,7 +89,7 @@ export default function DegreeShowPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/TwentyFourSeven/degreeshow5.webp"
                 alt="Degree Show Stickers"
@@ -114,7 +115,7 @@ export default function DegreeShowPage() {
 
           {/* Grid Section 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/TwentyFourSeven/degreeshow6.webp"
                 alt="Degree Show Flyers"
@@ -122,7 +123,7 @@ export default function DegreeShowPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/TwentyFourSeven/degreeshow7.webp"
                 alt="Degree Show Pattern"
@@ -140,7 +141,7 @@ export default function DegreeShowPage() {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-auto rounded-xl"
+              className="w-full h-auto"
             />
           </div>
         </div>
