@@ -7,7 +7,7 @@ export default function CapriSunPage() {
       {/* Hero Image */}
       <div className="w-full mb-20">
         <Image
-          src="/projects/capriSun/caprisun1.webp"
+          src="/projects/CapriSun/caprisun1.webp"
           alt="Capri-Sun Hero"
           width={0}
           height={0}
@@ -54,7 +54,7 @@ export default function CapriSunPage() {
           {/* Full Width Image 1 */}
           <div className="w-full">
             <Image
-              src="/projects/capriSun/caprisun2.webp"
+              src="/projects/CapriSun/caprisun2.webp"
               alt="Capri-Sun Pouch"
               width={0}
               height={0}
@@ -66,7 +66,7 @@ export default function CapriSunPage() {
            {/* Full Width Image 2 */}
            <div className="w-full">
             <Image
-              src="/projects/capriSun/caprisun3.webp"
+              src="/projects/CapriSun/caprisun3.webp"
               alt="Capri-Sun Box and Pouches"
               width={0}
               height={0}
@@ -91,7 +91,7 @@ export default function CapriSunPage() {
           {/* Footer Image */}
           <div className="w-full">
              <Image
-              src="/projects/capriSun/caprisun4.webp"
+              src="/projects/CapriSun/caprisun4.webp"
               alt="Capri-Sun Banner"
               width={0}
               height={0}
