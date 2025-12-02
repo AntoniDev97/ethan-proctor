@@ -71,7 +71,7 @@ export default function FoxwhelpPage() {
               new people. Foxwhelp taps into a gap in the market by bringing back
               the luxurious age in apple fermenting to remind the nation of the
               delicate techniques passed down through generations. Creating an
-              authentic, bittership cider that can compete with drinks of the same
+              authentic, bittersharp cider that can compete with drinks of the same
               quality as fine wines, prosecco and champagnes.
             </p>
           </div>

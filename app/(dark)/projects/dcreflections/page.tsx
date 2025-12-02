@@ -79,7 +79,7 @@ export default function DCReflectionsPage() {
               within the finer details, a pinpoint visual asset that resembled
               that of an injection needle. The logo itself, a contemporary take on
               what is an extremely saturated market, attempting to be distinct and
-              standout from the crowd, completed with subtle hints of natureless
+              standout from the crowd, completed with subtle hints of naturalness
               and a splash of colour on an otherwise sleek visual identity system.
             </p>
           </div>

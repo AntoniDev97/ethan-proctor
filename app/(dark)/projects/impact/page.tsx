@@ -59,7 +59,7 @@ export default function ImpactPage() {
               My solution was to create the Impact pop-up mini golf event that
               acts as a bridge for families to break down the barriers to golf and
               introduce those into a fun and welcoming environment. Stereotyping
-              exists in the golf world, which its seemingly niche target market
+              exists in the golf world, with its seemingly niche target market
               and expensive nature, yet kids are still 60 times more likely to get
               into it if a parent takes it up too.
             </p>

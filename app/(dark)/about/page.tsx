@@ -35,7 +35,7 @@ export default function AboutPage() {
                   brands have to go through.
                 </p>
                 <p className="text-3xl md:text-[3.1rem] font-semibold leading-tight">
-                  I inherited something creative somewhere along the line and it's
+                  I inherited something creative somewhere along the way and it's
                   always sort of been there, it started out as a small passion for
                   sketching and blossomed into a long-lasting admiration for creating
                   something out of nothing.

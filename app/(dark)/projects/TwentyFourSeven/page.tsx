@@ -35,7 +35,7 @@ export default function DegreeShowPage() {
             <div className="md:col-span-6 md:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 The best ideas strike when you least expect them - whether you're
-                in the tub, dancing your heart, lifting weights, or saving the
+                in the tub, dancing your heart out, lifting weights, or saving the
                 world. As Northumbria Graphic Designers, there's always a part of
                 our brain thinking about design.
               </p>
