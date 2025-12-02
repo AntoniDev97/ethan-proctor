@@ -5,7 +5,7 @@ import CtaLink from "../ui/CtaLink";
 
 const AboutIntro = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-8 md:py-24 bg-white">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
           <div className="md:col-start-2 md:col-span-10">
