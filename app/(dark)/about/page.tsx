@@ -30,13 +30,13 @@ export default function AboutPage() {
                   <span className="block text-sm md:text-base mb-4 text-gray-400 font-normal">
                     About Me
                   </span>
-                  <p className="text-3xl md:text-[3.1rem] font-semibold leading-tight mb-8">
+                  <p className="text-2xl md:text-[2.5rem] font-semibold leading-tight mb-8">
                     Hey. As you&apos;ve probably guessed, I&apos;m a graphic designer. Passionate
                     about all things brand identity, from ridiculously far out concepts to
                     teeny tiny refinements, it&apos;s all a part of the craft and journey that
                     brands have to go through.
                   </p>
-                  <p className="text-3xl md:text-[3.1rem] font-semibold leading-tight">
+                  <p className="text-2xl md:text-[2.5rem] font-semibold leading-tight">
                     I inherited something creative somewhere along the way and it&apos;s
                     always sort of been there, it started out as a small passion for
                     sketching and blossomed into a long-lasting admiration for creating
