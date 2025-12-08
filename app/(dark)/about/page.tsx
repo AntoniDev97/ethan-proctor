@@ -52,10 +52,10 @@ export default function AboutPage() {
         <div className="bg-white text-brand-dark py-[80px]">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
-              <div className="md:col-start-2 md:col-span-10">
+              <div className="md:col-span-12 2xl:col-start-2 2xl:col-span-10">
                 {/* In The Making */}
-                <FadeIn className="flex flex-col lg:flex-row gap-12 lg:gap-[80px] items-start mb-[80px]">
-                  <div className="relative w-full md:w-[522px] aspect-[522/791] flex-shrink-0">
+                <FadeIn className="flex flex-col lg:flex-row gap-12 lg:gap-12 items-start mb-[80px]">
+                  <div className="relative w-full lg:w-[350px] aspect-[522/791] flex-shrink-0">
                     <Image
                       src="/about/golfing_me_about.webp"
                       alt="Young Ethan playing golf"
@@ -63,11 +63,11 @@ export default function AboutPage() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="flex-1 pt-8">
-                    <h2 className="text-5xl md:text-7xl font-extrabold mb-8 uppercase tracking-wide text-black">
+                  <div className="flex-1">
+                    <h2 className="text-5xl md:text-7xl font-extrabold mb-8 uppercase tracking-wide text-black leading-none">
                       In the Making
                     </h2>
-                    <div className="space-y-6 text-black text-xl md:text-2xl lg:text-3xl xl:text-[2.2rem] leading-snug font-semibold">
+                    <div className="space-y-6 text-black text-xl md:text-xl lg:text-xl xl:text-[2.2rem] 2xl:text-2xl min-[1650px]:text-[2.2rem] min-[1850px]:text-2xl min-[2100px]:text-[2.2rem] leading-snug font-semibold">
                       <p>I’ve spent most of my life in the rurals of North Yorkshire,
                         with a mild golfing addiction that I can’t seem to shake. Undecided on
                         what I wanted to pursue, I took on Accounting at university but a small
@@ -86,9 +86,9 @@ export default function AboutPage() {
                 </FadeIn>
 
                 {/* Transition Section */}
-                <FadeIn className="flex flex-col lg:flex-row gap-12 lg:gap-[80px] items-center">
+                <FadeIn className="flex flex-col lg:flex-row gap-12 lg:gap-12 items-start">
                   <div className="flex-1 order-2 md:order-1">
-                    <div className="space-y-6 text-black text-xl md:text-2xl lg:text-3xl xl:text-[2.2rem] leading-snug font-semibold">
+                    <div className="space-y-6 text-black text-xl md:text-xl lg:text-xl xl:text-[2.2rem] 2xl:text-2xl min-[1650px]:text-[2.2rem] min-[1850px]:text-2xl min-[2100px]:text-[2.2rem] leading-snug font-semibold">
                       <p>
                         Deciding to turn that passion into profession, I decided to change my degree at
                         Northumbria University from Accounting to Graphic Design and chase a life of
@@ -101,7 +101,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="relative w-full md:w-[704px] aspect-[704/532] flex-shrink-0 order-1 md:order-2">
+                  <div className="relative w-full lg:w-[450px] aspect-[704/532] flex-shrink-0 order-1 md:order-2">
                     <Image
                       src="/about/photography_studio_about.webp"
                       alt="Ethan in photography studio"
