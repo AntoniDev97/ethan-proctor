@@ -54,7 +54,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
               <div className="md:col-start-2 md:col-span-10">
                 {/* In The Making */}
-                <FadeIn className="flex flex-col md:flex-row gap-12 md:gap-[80px] items-start mb-[80px]">
+                <FadeIn className="flex flex-col lg:flex-row gap-12 lg:gap-[80px] items-start mb-[80px]">
                   <div className="relative w-full md:w-[522px] aspect-[522/791] flex-shrink-0">
                     <Image
                       src="/about/golfing_me_about.webp"
@@ -67,7 +67,7 @@ export default function AboutPage() {
                     <h2 className="text-5xl md:text-7xl font-extrabold mb-8 uppercase tracking-wide text-black">
                       In the Making
                     </h2>
-                    <div className="space-y-6 text-black text-3xl md:text-[2.2rem] leading-snug font-semibold">
+                    <div className="space-y-6 text-black text-xl md:text-2xl lg:text-3xl xl:text-[2.2rem] leading-snug font-semibold">
                       <p>I’ve spent most of my life in the rurals of North Yorkshire,
                         with a mild golfing addiction that I can’t seem to shake. Undecided on
                         what I wanted to pursue, I took on Accounting at university but a small
@@ -86,9 +86,9 @@ export default function AboutPage() {
                 </FadeIn>
 
                 {/* Transition Section */}
-                <FadeIn className="flex flex-col md:flex-row gap-12 md:gap-[80px] items-center">
+                <FadeIn className="flex flex-col lg:flex-row gap-12 lg:gap-[80px] items-center">
                   <div className="flex-1 order-2 md:order-1">
-                    <div className="space-y-6 text-black text-3xl md:text-[2.2rem] leading-snug font-semibold">
+                    <div className="space-y-6 text-black text-xl md:text-2xl lg:text-3xl xl:text-[2.2rem] leading-snug font-semibold">
                       <p>
                         Deciding to turn that passion into profession, I decided to change my degree at
                         Northumbria University from Accounting to Graphic Design and chase a life of

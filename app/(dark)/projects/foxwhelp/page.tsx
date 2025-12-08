@@ -22,8 +22,8 @@ export default function FoxwhelpPage() {
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
-            <div className="md:col-span-4">
+          <FadeIn className="grid grid-cols-1 lg:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+            <div className="lg:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Foxwhelp Premium</h1>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Cider</h1>
               <div className="text-base text-gray-400 space-y-1">
@@ -33,7 +33,7 @@ export default function FoxwhelpPage() {
                 <p>Brand World</p>
               </div>
             </div>
-            <div className="md:col-span-6 md:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 Research shows that cider is losing its authenticity, which once ran
                 deep into British culture. Foxwhelp challenges the norms,

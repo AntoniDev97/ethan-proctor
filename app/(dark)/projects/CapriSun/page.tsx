@@ -22,8 +22,8 @@ export default function CapriSunPage() {
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
-            <div className="md:col-span-4">
+          <FadeIn className="grid grid-cols-1 lg:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+            <div className="lg:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">CapriSun Fall 2025</h1>
               <h1 className="text-2xl md:text-3xl font-bold mb-6 text-gray-400">(Limited Time Offer)</h1>
               <div className="text-base text-gray-400 space-y-4 mt-6">
@@ -41,7 +41,7 @@ export default function CapriSunPage() {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-6 md:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 Having the opportunity to work on a huge new product for CapriSun
                 in the US has been a highlight of the start of my career. The ask

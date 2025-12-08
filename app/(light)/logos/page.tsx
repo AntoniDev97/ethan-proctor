@@ -15,7 +15,7 @@ export default function LogosPage() {
             <div className="md:col-start-2 md:col-span-10">
               {/* Grid of logos - 4 columns */}
               <motion.div 
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-12"
                 initial="hidden"
                 animate="visible"
                 variants={{
