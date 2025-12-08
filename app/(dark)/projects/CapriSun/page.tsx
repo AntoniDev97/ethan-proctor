@@ -80,7 +80,7 @@ export default function CapriSunPage() {
           <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               The illustrations were designed to encapsulate the game day
-              experience, what you'd expect to see and how that resonates with the
+              experience, what you&apos;d expect to see and how that resonates with the
               target market of energetic teens. The style was playful and modern,
               whilst attempting to still be distinctively CapriSun. The coherent
               design seemlessly flexed across multiple formats and an opportunity

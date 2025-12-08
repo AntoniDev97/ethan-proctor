@@ -31,13 +31,13 @@ export default function AboutPage() {
                     About Me
                   </span>
                   <p className="text-3xl md:text-[3.1rem] font-semibold leading-tight mb-8">
-                    Hey. As you've probably guessed, I'm a graphic designer. Passionate
+                    Hey. As you&apos;ve probably guessed, I&apos;m a graphic designer. Passionate
                     about all things brand identity, from ridiculously far out concepts to
-                    teeny tiny refinements, it's all a part of the craft and journey that
+                    teeny tiny refinements, it&apos;s all a part of the craft and journey that
                     brands have to go through.
                   </p>
                   <p className="text-3xl md:text-[3.1rem] font-semibold leading-tight">
-                    I inherited something creative somewhere along the way and it's
+                    I inherited something creative somewhere along the way and it&apos;s
                     always sort of been there, it started out as a small passion for
                     sketching and blossomed into a long-lasting admiration for creating
                     something out of nothing.
@@ -69,6 +69,7 @@ export default function AboutPage() {
                     </h2>
                     <div className="space-y-6 text-black text-3xl md:text-[2.2rem] leading-snug font-semibold">
                       <p>I’ve spent most of my life in the rurals of North Yorkshire,
+                        with a mild golfing addiction that I can’t seem to shake. Undecided on
                         what I wanted to pursue, I took on Accounting at university but a small
                         part of me craved creativity.
                       </p>
@@ -130,7 +131,7 @@ export default function AboutPage() {
                     These days I spend my time in the mini apple that is London, where I
                     continue to progress and improve in my current role. Mastering the
                     craft, learning from those who have already mastered it and making it
-                    my mission to challenge what's come before.
+                    my mission to challenge what&apos;s come before.
                   </p>
                 </FadeIn>
               </div>

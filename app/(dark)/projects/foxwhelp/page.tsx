@@ -38,7 +38,7 @@ export default function FoxwhelpPage() {
                 Research shows that cider is losing its authenticity, which once ran
                 deep into British culture. Foxwhelp challenges the norms,
                 rediscovering its premium origin and its target market of 35-60
-                year olds. With the brand's driving force at the center, the
+                year olds. With the brand&apos;s driving force at the center, the
                 Foxwhelp apple.
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function FoxwhelpPage() {
           {/* Text Section 1 */}
           <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
-              This competition brief, as part of BrandOpus' Hatch program, was to
+              This competition brief, as part of BrandOpus&apos; Hatch program, was to
               help cider feel less predictable, to break conventions and appeal to
               new people. Foxwhelp taps into a gap in the market by bringing back
               the luxurious age in apple fermenting to remind the nation of the

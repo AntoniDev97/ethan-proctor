@@ -35,9 +35,9 @@ export default function DegreeShowPage() {
             </div>
             <div className="md:col-span-6 md:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
-                The best ideas strike when you least expect them - whether you're
+                The best ideas strike when you least expect them - whether you&apos;re
                 in the tub, dancing your heart out, lifting weights, or saving the
-                world. As Northumbria Graphic Designers, there's always a part of
+                world. As Northumbria Graphic Designers, there&apos;s always a part of
                 our brain thinking about design.
               </p>
             </div>
@@ -103,7 +103,7 @@ export default function DegreeShowPage() {
           {/* Text Section 2 */}
           <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
-              The direction we took fell out of the million ways we'd considered
+              The direction we took fell out of the million ways we&apos;d considered
               to express our designers, an inevitability that the opportunities to
               create are infinite. Each unique and true to the task at hand, we
               dedicated the individuality of the many projects throughout the

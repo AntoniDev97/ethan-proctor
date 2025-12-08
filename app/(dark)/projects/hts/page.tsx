@@ -34,7 +34,7 @@ export default function HTSPage() {
             </div>
             <div className="md:col-span-6 md:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
-                Alistair's CCTV and security support company, Harthorn Technology
+                Alistair&apos;s CCTV and security support company, Harthorn Technology
                 Solutions, focuses on providing services to the local community,
                 Using his 20+ years of experience in the mud of the tech world,
                 helping people to feel safe and comfortable in their homes for
@@ -69,7 +69,7 @@ export default function HTSPage() {
               The brief was to design something clear, modern, simple. Refreshing
               the brand in a way that could represent the heritage and expertise
               that Alistair has spent many years building up. The contemporary
-              monogram I created is fitting as a combination of the brand's
+              monogram I created is fitting as a combination of the brand&apos;s
               prowess, craftsmanship and sits within the shield to encapsulated
               the credible security services provided.
             </p>
