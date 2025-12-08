@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function FletchPlayPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/fetchPlay/fletchPlay1.webp"
           alt="Fletch & Play Hero"
@@ -15,14 +16,14 @@ export default function FletchPlayPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Fletch & Play</h1>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Doggy Daycare</h1>
@@ -39,10 +40,10 @@ export default function FletchPlayPage() {
                 resonate with playtime!
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Billboard Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/fetchPlay/fletchPlay2.webp"
               alt="Fletch & Play Billboard"
@@ -51,10 +52,10 @@ export default function FletchPlayPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Grid Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden bg-[#EAE8E4]">
               <Image
                 src="/projects/fetchPlay/fletchPlay3.webp"
@@ -71,11 +72,11 @@ export default function FletchPlayPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Text Section */}
           {/* Text Section */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               Bringing to life the personalities of the distinct characters, the
               aim was to design a suite of illustrations that felt accessible
@@ -86,10 +87,10 @@ export default function FletchPlayPage() {
               was seemingly understanding of the language of your furry little
               friends.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Mobile Screens */}
-          <div className="w-full bg-[#EAE8E4]">
+          <FadeIn className="w-full bg-[#EAE8E4]">
              <Image
               src="/projects/fetchPlay/fletchPlay5.webp"
               alt="Fletch & Play Mobile Screens"
@@ -98,7 +99,7 @@ export default function FletchPlayPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

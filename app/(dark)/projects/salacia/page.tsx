@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function SalaciaPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/salacia/salacia1.webp"
           alt="Salacia 1872 Hero"
@@ -15,13 +16,13 @@ export default function SalaciaPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Salacia 1872</h1>
               <div className="text-base text-gray-400 space-y-1 mt-6">
@@ -39,10 +40,10 @@ export default function SalaciaPage() {
                 prestigious rum.
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden bg-[#EAE8E4]">
               <Image
                 src="/projects/salacia/salacia2.webp"
@@ -59,10 +60,10 @@ export default function SalaciaPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/salacia/salacia4.webp"
               alt="Salacia Bottles"
@@ -71,10 +72,10 @@ export default function SalaciaPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Text Section 1 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               The logo encapsulates the unsettling story of the Mary Celeste,
               hinting at the presence of someone lurking, with the idea that there
@@ -84,10 +85,10 @@ export default function SalaciaPage() {
               that drive the storytelling and unique point of sale that nods to
               the missing lifeboat.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image (Sketches) */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/salacia/salacia5.webp"
               alt="Salacia Sketches"
@@ -96,10 +97,10 @@ export default function SalaciaPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Footer Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
              <Image
               src="/projects/salacia/salacia6.webp"
               alt="Salacia Lineup"
@@ -108,7 +109,7 @@ export default function SalaciaPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function DegreeShowPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/TwentyFourSeven/degreeshow1.webp"
           alt="Degree Show Posters"
@@ -15,13 +16,13 @@ export default function DegreeShowPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Northumbria Design</h1>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Degree Show 2024</h1>
@@ -40,10 +41,10 @@ export default function DegreeShowPage() {
                 our brain thinking about design.
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image 1 */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/TwentyFourSeven/degreeshow2.webp"
               alt="Degree Show Team"
@@ -52,10 +53,10 @@ export default function DegreeShowPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Text Section 1 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               Myself and the team, Shane McClean & Josh Robson, volunteered to
               collaborate and intern with Northumbria University, on this once in
@@ -65,10 +66,10 @@ export default function DegreeShowPage() {
               distinct exhibition, attempting to show-off the skills and talent
               that Northumbria helped nurture.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image 2 */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/TwentyFourSeven/degreeshow3.webp"
               alt="Degree Show App"
@@ -77,10 +78,10 @@ export default function DegreeShowPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Grid Section 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/TwentyFourSeven/degreeshow4.webp"
@@ -97,10 +98,10 @@ export default function DegreeShowPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Text Section 2 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               The direction we took fell out of the million ways we'd considered
               to express our designers, an inevitability that the opportunities to
@@ -111,10 +112,10 @@ export default function DegreeShowPage() {
               so, became a testament to the course, rich in ideas that are truly
               authentic.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/TwentyFourSeven/degreeshow6.webp"
@@ -131,10 +132,10 @@ export default function DegreeShowPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Footer Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
              <Image
               src="/projects/TwentyFourSeven/degreeshow8.webp"
               alt="Degree Show Booklet"
@@ -143,7 +144,7 @@ export default function DegreeShowPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

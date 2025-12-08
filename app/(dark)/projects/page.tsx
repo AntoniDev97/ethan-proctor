@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/app/components/layout/Container";
+import * as motion from "motion/react-client";
 
 const projects = [
   {
@@ -55,25 +56,43 @@ export default function ProjectsPage() {
   return (
     <div className="bg-brand-dark min-h-screen py-20">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <motion.div 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.1
+              }
+            }
+          }}
+        >
           {projects.map((project) => (
-            <Link
+            <motion.div
               key={project.id}
-              href={`/projects/${project.id}`}
-              className="block group"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+              }}
             >
-              <div className="relative w-full aspect-square overflow-hidden">
-                <Image
-                  src={project.src}
-                  alt={`${project.title} Project`}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </Link>
+              <Link
+                href={`/projects/${project.id}`}
+                className="block group"
+              >
+                <div className="relative w-full aspect-square overflow-hidden">
+                  <Image
+                    src={project.src}
+                    alt={`${project.title} Project`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </Link>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </Container>
     </div>
   );

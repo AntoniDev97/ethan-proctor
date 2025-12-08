@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function CapriSunPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/CapriSun/caprisun1.webp"
           alt="Capri-Sun Hero"
@@ -15,13 +16,13 @@ export default function CapriSunPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">CapriSun Fall 2025</h1>
               <h1 className="text-2xl md:text-3xl font-bold mb-6 text-gray-400">(Limited Time Offer)</h1>
@@ -49,10 +50,10 @@ export default function CapriSunPage() {
                 and relatable.
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image 1 */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/CapriSun/caprisun2.webp"
               alt="Capri-Sun Pouch"
@@ -61,10 +62,10 @@ export default function CapriSunPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
            {/* Full Width Image 2 */}
-           <div className="w-full">
+           <FadeIn className="w-full">
             <Image
               src="/projects/CapriSun/caprisun3.webp"
               alt="Capri-Sun Box and Pouches"
@@ -73,10 +74,10 @@ export default function CapriSunPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Text Section 1 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               The illustrations were designed to encapsulate the game day
               experience, what you'd expect to see and how that resonates with the
@@ -86,10 +87,10 @@ export default function CapriSunPage() {
               arose to lean into some customisation in the pouch where kids can
               write their name and express their individuality.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Footer Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
              <Image
               src="/projects/CapriSun/caprisun4.webp"
               alt="Capri-Sun Banner"
@@ -98,7 +99,7 @@ export default function CapriSunPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

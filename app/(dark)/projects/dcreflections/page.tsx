@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function DCReflectionsPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/dcreflections/dcreflections1.webp"
           alt="DC Reflections Hero"
@@ -15,13 +16,13 @@ export default function DCReflectionsPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">DC Reflections</h1>
               <div className="text-base text-gray-400 space-y-1 mt-6">
@@ -38,10 +39,10 @@ export default function DCReflectionsPage() {
                 service of long-lasting radiance.
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/dcreflections/dcreflections2.webp"
               alt="DC Reflections Business Card"
@@ -50,10 +51,10 @@ export default function DCReflectionsPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Grid Section 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/dcreflections/dcreflections3.webp"
@@ -70,10 +71,10 @@ export default function DCReflectionsPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Text Section 1 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               The opportunity laid within this majestic typography, finding beauty
               within the finer details, a pinpoint visual asset that resembled
@@ -82,10 +83,10 @@ export default function DCReflectionsPage() {
               standout from the crowd, completed with subtle hints of naturalness
               and a splash of colour on an otherwise sleek visual identity system.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Footer Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
              <Image
               src="/projects/dcreflections/dcreflections5.webp"
               alt="DC Reflections Overlay"
@@ -94,7 +95,7 @@ export default function DCReflectionsPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

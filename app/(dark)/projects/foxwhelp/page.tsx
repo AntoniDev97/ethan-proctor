@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function FoxwhelpPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/foxwhelp/foxwhelp1.webp"
           alt="Foxwhelp Hero"
@@ -15,13 +16,13 @@ export default function FoxwhelpPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Foxwhelp Premium</h1>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Cider</h1>
@@ -41,10 +42,10 @@ export default function FoxwhelpPage() {
                 Foxwhelp apple.
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-[3/4] overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp2.webp"
@@ -61,10 +62,10 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Text Section 1 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               This competition brief, as part of BrandOpus' Hatch program, was to
               help cider feel less predictable, to break conventions and appeal to
@@ -74,10 +75,10 @@ export default function FoxwhelpPage() {
               authentic, bittersharp cider that can compete with drinks of the same
               quality as fine wines, prosecco and champagnes.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp4.webp"
@@ -94,10 +95,10 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
            {/* Full Width Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/foxwhelp/foxwhelp6.webp"
               alt="Foxwhelp Box"
@@ -106,10 +107,10 @@ export default function FoxwhelpPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Text Section 2 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               The identity created combines the fox wrapped around the Foxwhelp
               apple, the leaf contributes to the visual cues of natural
@@ -119,10 +120,10 @@ export default function FoxwhelpPage() {
               indications and links to the fox that consumers can relate to for
               every occasion.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 3 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp7.webp"
@@ -139,10 +140,10 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Footer Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
              <Image
               src="/projects/foxwhelp/foxwhelp9.webp"
               alt="Foxwhelp Bottles Lineup"
@@ -151,7 +152,7 @@ export default function FoxwhelpPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

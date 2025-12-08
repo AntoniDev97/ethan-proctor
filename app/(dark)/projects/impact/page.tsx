@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function ImpactPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/impact/impact1.webp"
           alt="Impact Mini-Golf Hero"
@@ -15,13 +16,13 @@ export default function ImpactPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Impact Mini-Golf</h1>
               <div className="text-base text-gray-400 space-y-1 mt-6">
@@ -39,10 +40,10 @@ export default function ImpactPage() {
                 spend more quality time with their families.
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Full Width Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
             <Image
               src="/projects/impact/impact2.webp"
               alt="Impact App UI"
@@ -51,10 +52,10 @@ export default function ImpactPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
 
           {/* Text Section 1 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               My solution was to create the Impact pop-up mini golf event that
               acts as a bridge for families to break down the barriers to golf and
@@ -63,10 +64,10 @@ export default function ImpactPage() {
               and expensive nature, yet kids are still 60 times more likely to get
               into it if a parent takes it up too.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/impact/impact3.webp"
@@ -83,10 +84,10 @@ export default function ImpactPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
 
           {/* Text Section 2 */}
-          <div className="px-4 md:px-12 lg:px-24">
+          <FadeIn className="px-4 md:px-12 lg:px-24">
             <p className="text-xl md:text-3xl leading-relaxed text-gray-300">
               Impact serves as an interactive and accessible event, informing on
               the benefits, inspiring younger generations and sparking
@@ -95,10 +96,10 @@ export default function ImpactPage() {
               free merchandise for participants, an exciting social media presence
               and overall challenging the dated opinons on what golf used to be.
             </p>
-          </div>
+          </FadeIn>
 
           {/* Footer Image */}
-          <div className="w-full">
+          <FadeIn className="w-full">
              <Image
               src="/projects/impact/impact5.webp"
               alt="Impact Booklet"
@@ -107,7 +108,7 @@ export default function ImpactPage() {
               sizes="100vw"
               className="w-full h-auto"
             />
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>

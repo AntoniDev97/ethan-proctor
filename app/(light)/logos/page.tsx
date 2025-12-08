@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import * as motion from "motion/react-client";
 
 export default function LogosPage() {
   // Generate array of logo numbers 1-20
@@ -13,11 +14,26 @@ export default function LogosPage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
             <div className="md:col-start-2 md:col-span-10">
               {/* Grid of logos - 4 columns */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+              <motion.div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12"
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  visible: {
+                    transition: {
+                      staggerChildren: 0.1
+                    }
+                  }
+                }}
+              >
                 {logoNumbers.map((num) => (
-                  <div
+                  <motion.div
                     key={num}
                     className="relative w-full aspect-square"
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+                    }}
                   >
                     <div className="w-full h-full p-5 flex items-center justify-center bg-white">
                       <Image
@@ -28,9 +44,9 @@ export default function LogosPage() {
                         className="w-full h-full object-contain"
                       />
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </Container>

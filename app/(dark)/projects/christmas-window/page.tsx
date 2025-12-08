@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
+import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function ChristmasWindowPage() {
   return (
     <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
       {/* Hero Image */}
-      <div className="w-full mb-20">
+      <FadeIn className="w-full mb-20" priority>
         <Image
           src="/projects/christmasWindow/window1.webp"
           alt="Christmas Window Hero"
@@ -15,13 +16,13 @@ export default function ChristmasWindowPage() {
           className="w-full h-auto"
           priority
         />
-      </div>
+      </FadeIn>
 
       <Container>
         <div className="space-y-20">
 
           {/* Intro Text */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-y-10 items-start px-4 md:px-12 lg:px-24">
             <div className="md:col-span-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-2">Newcastle Christmas</h1>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Competition 2022</h1>
@@ -40,10 +41,10 @@ export default function ChristmasWindowPage() {
                 culture of the toon!
               </p>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Grid Section 1 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/christmasWindow/window2.webp"
@@ -60,7 +61,7 @@ export default function ChristmasWindowPage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </FadeIn>
         </div>
       </Container>
     </div>
