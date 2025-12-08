@@ -31,7 +31,7 @@ export default function SalaciaPage() {
                 <p>Brand World</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 The brief was to create a seaweed-infused beverage, with freedom
                 to create a rounded backstory which would drive the aesthetic and

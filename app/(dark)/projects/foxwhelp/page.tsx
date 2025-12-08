@@ -33,7 +33,7 @@ export default function FoxwhelpPage() {
                 <p>Brand World</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 Research shows that cider is losing its authenticity, which once ran
                 deep into British culture. Foxwhelp challenges the norms,

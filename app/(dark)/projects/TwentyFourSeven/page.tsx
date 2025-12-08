@@ -33,7 +33,7 @@ export default function DegreeShowPage() {
                 <p>Exhibition Design</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 The best ideas strike when you least expect them - whether you&apos;re
                 in the tub, dancing your heart out, lifting weights, or saving the

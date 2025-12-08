@@ -41,7 +41,7 @@ export default function CapriSunPage() {
                 </div>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 Having the opportunity to work on a huge new product for CapriSun
                 in the US has been a highlight of the start of my career. The ask

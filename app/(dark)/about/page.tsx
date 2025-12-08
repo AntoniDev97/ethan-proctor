@@ -121,13 +121,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
               <div className="md:col-start-2 md:col-span-10">
                 <FadeIn>
-                  <p className="text-3xl md:text-[3.2rem] font-semibold leading-tight mb-8">
+                  <p className="text-2xl md:text-[2.5rem] font-semibold leading-tight mb-8">
                     So why am I telling you all of this? I believe that trust is the key
                     element in collaboration. I use my experiences and intuition in every
                     piece of design where I pride myself in setting myself apart from the
                     crowd.
                   </p>
-                  <p className="text-3xl md:text-[3.2rem] font-semibold leading-tight">
+                  <p className="text-2xl md:text-[2.5rem] font-semibold leading-tight">
                     These days I spend my time in the mini apple that is London, where I
                     continue to progress and improve in my current role. Mastering the
                     craft, learning from those who have already mastered it and making it

@@ -30,7 +30,7 @@ export default function DCReflectionsPage() {
                 <p>Identity System</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 This exciting little project fell on my lap from the friend of a
                 friend, a small start-up beauty brand with a passion for all

@@ -32,7 +32,7 @@ export default function FletchPlayPage() {
                 <p>Identity System</p>
               </div>
             </div>
-            <div className="lg:col-span-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 I was fortunate enough to have the opportunity to craft into some
                 quirky illustrations for a doggy daycare start-up brand,

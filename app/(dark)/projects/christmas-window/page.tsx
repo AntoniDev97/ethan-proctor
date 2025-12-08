@@ -32,7 +32,7 @@ export default function ChristmasWindowPage() {
                 <p>Copywriting</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 One of the first pieces of work I had out in the world was this
                 illustrative competition winner for Newcastle City Council. The

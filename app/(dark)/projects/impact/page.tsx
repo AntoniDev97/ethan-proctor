@@ -32,7 +32,7 @@ export default function ImpactPage() {
                 <p>Exhibition Design</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 Over 50% of parents are knowingly spending too little time with
                 their children. With golf being such an impactful contribution to

@@ -32,7 +32,7 @@ export default function HTSPage() {
                 <p>Brand World</p>
               </div>
             </div>
-            <div className="lg:col-span-6 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
+            <div className="lg:col-span-7 lg:col-start-6 text-xl md:text-3xl leading-relaxed text-gray-300">
               <p>
                 Alistair&apos;s CCTV and security support company, Harthorn Technology
                 Solutions, focuses on providing services to the local community,
