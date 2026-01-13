@@ -29,11 +29,13 @@ const projects = [
     title: "Salacia",
     src: "/projects/salacia_project_page.webp",
   },
+  /*
   {
     id: "CapriSun",
     title: "CapriSun",
     src: "/projects/caprisun_project_page.webp",
   },
+  */
   {
     id: "TwentyFourSeven",
     title: "TwentyFourSeven",
@@ -44,11 +46,13 @@ const projects = [
     title: "DCReflections",
     src: "/projects/reflections_projects_page.webp",
   },
+  /*
   {
     id: "christmas-window",
     title: "Christmas Window",
     src: "/projects/xmas_window_projects_page.webp",
   },
+  */
 
 ];
 
