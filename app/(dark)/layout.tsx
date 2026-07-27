@@ -9,7 +9,7 @@ export default function DarkLayout({
   return (
     <div className="bg-brand-dark text-[#e5e5e5] min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main className="grow">{children}</main>
       <Footer />
     </div>
   );

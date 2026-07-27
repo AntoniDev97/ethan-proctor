@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 // We'll import the fonts we defined in the tailwind config
 import { Inter, Dancing_Script } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "./components/ui/CustomCursor";
 
 
 // Setup the font variables
@@ -100,6 +101,7 @@ export default function RootLayout({
         className={`${inter.variable} ${dancingScript.variable} font-sans`}
         style={{ fontFamily: "din-2014, var(--font-inter), sans-serif" }}
       >
+        <CustomCursor />
         {children}
       </body>
     </html>

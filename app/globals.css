@@ -5,10 +5,34 @@
 */
 @import "tailwindcss";
 
+@theme {
+  --color-brand-dark: #161616;
+  --color-brand-light: #8e8879;
+  --color-brand-gray: #3a3a3a;
+}
+
 :root {
   --brand-dark: #161616;
   --brand-light: #8e8879;
   --brand-gray: #3a3a3a;
+}
+
+/* Custom cursor: only on devices with a real mouse pointer.
+   The native cursor is hidden and replaced by the follower circle. */
+.custom-cursor {
+  display: none;
+}
+
+@media (pointer: fine) and (min-width: 1024px) {
+  .custom-cursor {
+    display: block;
+  }
+
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
 }
 
 /* Custom layer styles */
