@@ -42,7 +42,7 @@ const CustomCursor = () => {
   return (
     <motion.div
       aria-hidden
-      className="custom-cursor pointer-events-none fixed left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference"
+      className="custom-cursor pointer-events-none fixed left-0 top-0 z-9999 rounded-full bg-white mix-blend-difference"
       style={{ x, y, width: CURSOR_SIZE, height: CURSOR_SIZE }}
       animate={{ scale: hovered ? 1 : 0.5, opacity: visible ? 1 : 0 }}
       transition={{ type: "spring", stiffness: 400, damping: 28 }}

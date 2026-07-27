@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-brand-dark py-16 md:py-24">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           <div className="flex flex-col justify-between h-full">
             <motion.div
               className="flex flex-wrap gap-3"
@@ -28,7 +28,7 @@ const Hero = () => {
               ))}
             </motion.div>
             <motion.h1
-              className="text-white font-bold leading-[1.05] text-[4.5rem] md:text-[6.5rem] lg:text-[9rem] xl:text-[11rem] mt-12 md:mt-0"
+              className="text-white font-bold leading-[1.05] text-[3.25rem] md:text-[clamp(3.5rem,calc(12.5vw-60px),11rem)] mt-10 md:mt-0"
               style={{ fontFamily: '"din-2014", sans-serif' }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

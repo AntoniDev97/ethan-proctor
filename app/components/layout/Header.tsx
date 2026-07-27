@@ -49,8 +49,8 @@ const Header = () => {
                 href={link.href}
                 className={`nav-pill px-6 py-2 font-semibold tracking-widest rounded-full transition-all duration-300 ${
                   isActive
-                    ? "bg-[#8e8879] text-white"
-                    : "text-black hover:bg-[#8e8879] hover:text-white"
+                    ? "bg-brand-light text-white"
+                    : "text-black hover:bg-brand-light hover:text-white"
                 }`}
                 style={{
                   fontFamily: '"din-2014", sans-serif',
@@ -109,7 +109,7 @@ const Header = () => {
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)} // Close menu on click
                     className={`tracking-widest text-center transition-colors font-semibold ${
-                      isActive ? "text-[#8e8879]" : "text-black hover:text-[#8e8879]"
+                      isActive ? "text-brand-light" : "text-black hover:text-brand-light"
                     }`}
                     style={{
                       fontFamily: '"din-2014", sans-serif',
