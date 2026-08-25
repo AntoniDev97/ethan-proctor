@@ -41,7 +41,7 @@ const Header = () => {
             width={64}
             height={64}
             priority
-            className="w-[4.375rem] h-[4.375rem] object-contain"
+            className="w-17.5 h-17.5 object-contain"
           />
           <span className="sr-only">Ethan Proctor</span>
         </Link>
