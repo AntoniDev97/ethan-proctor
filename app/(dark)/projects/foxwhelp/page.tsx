@@ -46,7 +46,7 @@ export default function FoxwhelpPage() {
 
           {/* Grid Section 1 */}
           <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative w-full aspect-[3/4] overflow-hidden">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp2.webp"
                 alt="Foxwhelp Poster"
@@ -54,7 +54,7 @@ export default function FoxwhelpPage() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-full aspect-[3/4] overflow-hidden">
+            <div className="relative w-full aspect-square overflow-hidden">
               <Image
                 src="/projects/foxwhelp/foxwhelp3.webp"
                 alt="Foxwhelp Sign"

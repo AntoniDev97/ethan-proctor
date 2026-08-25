@@ -61,7 +61,7 @@ export default function ContactPage() {
             Drop me
             <br />a message
           </h1>
-          <p className="text-body-fluid mt-8 max-w-4xl">
+          <p className="text-body-fluid mt-8 max-w-6xl">
             If you&apos;d like to chat through any of my projects, design the
             next big thing or just fancy a chat then fill out the form below!
           </p>

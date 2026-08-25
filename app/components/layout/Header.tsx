@@ -12,6 +12,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  // Projects pages open with a black section, where the header's
+  // black rule reads as a floating artefact — hide it there.
+  const hideRule = pathname.startsWith("/projects");
+
   const navLinks = [
     { name: "logos", href: "/logos" },
     { name: "projects", href: "/projects" },
@@ -24,7 +28,11 @@ const Header = () => {
       {/* The rule under the header spans the content width (logo to contact),
           not the full viewport */}
       <Container>
-        <div className="flex justify-between items-center py-5 border-b-2 border-black">
+        <div
+          className={`flex justify-between items-center py-8 ${
+            hideRule ? "border-b-2 border-transparent" : "border-b-2 border-black"
+          }`}
+        >
         {/* Logo */}
         <Link href="/" aria-label="Home" className="flex items-center gap-4">
           <Image
@@ -33,20 +41,20 @@ const Header = () => {
             width={64}
             height={64}
             priority
-            className="w-14 h-14 object-contain"
+            className="w-[4.375rem] h-[4.375rem] object-contain"
           />
           <span className="sr-only">Ethan Proctor</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10">
+        <nav className="hidden md:flex items-center space-x-14">
           {navLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-nav font-semibold tracking-wide transition-opacity hover:opacity-60 ${
+                className={`text-nav font-semibold tracking-wide transition-opacity hover:opacity-60 outline-none ${
                   isActive
                     ? "underline decoration-2 underline-offset-8"
                     : ""
@@ -104,7 +112,7 @@ const Header = () => {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)} // Close menu on click
-                    className={`text-nav text-center font-semibold tracking-wide transition-opacity hover:opacity-60 ${
+                    className={`text-nav text-center font-semibold tracking-wide transition-opacity hover:opacity-60 outline-none ${
                       isActive
                         ? "underline decoration-2 underline-offset-8"
                         : ""

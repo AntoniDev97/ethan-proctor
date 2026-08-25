@@ -34,7 +34,7 @@ const PortfolioPreview = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+            <h2 className="text-[clamp(2rem,4.8vw,5.25rem)] font-extrabold tracking-tight">
               Fletch &amp; Play
             </h2>
             <div className="mt-6">
