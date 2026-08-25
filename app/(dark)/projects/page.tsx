@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/app/components/layout/Container";
 import * as motion from "motion/react-client";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Brand identity, packaging and digital design projects by Ethan Proctor — including work for start-ups and category-leading brands across the UK.",
+};
 
 const projects = [
   {
@@ -13,7 +20,6 @@ const projects = [
     id: "fragment",
     title: "Fragment",
     src: "/projects/fragment_projects_page.webp",
-    placeholder: true, // image only — no project page yet
   },
   {
     id: "foxwhelp",
@@ -98,29 +104,17 @@ export default function ProjectsPage() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
             >
-              {project.placeholder ? (
+              <Link href={`/projects/${project.id}`} className="block group">
                 <div className="relative w-full aspect-square overflow-hidden">
                   <Image
                     src={project.src}
                     alt={`${project.title} Project`}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
-              ) : (
-                <Link href={`/projects/${project.id}`} className="block group">
-                  <div className="relative w-full aspect-square overflow-hidden">
-                    <Image
-                      src={project.src}
-                      alt={`${project.title} Project`}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                  </div>
-                </Link>
-              )}
+              </Link>
             </motion.div>
           ))}
         </motion.div>

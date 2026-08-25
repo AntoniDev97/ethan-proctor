@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
 import CtaLink from "@/app/components/ui/CtaLink";
 import * as motion from "motion/react-client";
+
+export const metadata: Metadata = {
+  title: "Logos",
+  description:
+    "A collection of logo designs and brand marks by Ethan Proctor — logo design for start-ups, small businesses and established brands.",
+};
 
 export default function LogosPage() {
   // Generate array of logo numbers 1-20

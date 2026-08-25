@@ -19,20 +19,32 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ethanproctor.co.uk"),
-  title: "Ethan Proctor - Designer Portfolio",
+  title: {
+    default: "Ethan Proctor — Digital & Brand Designer in London",
+    template: "%s — Ethan Proctor",
+  },
   description:
-    "Portfolio for Ethan Proctor, a designer with a passion for all things branding. Specializing in brand identity, logo design, and creative direction based in London.",
+    "Portfolio of Ethan Proctor, a digital and brand designer specialising in brand identity and logo design. Based in Shoreditch, London — originally from North Yorkshire — and open to design opportunities across London, Leeds, York and Newcastle.",
   keywords: [
     "Graphic Designer",
+    "Digital Designer",
+    "Brand Designer",
     "Branding",
     "Brand Identity",
     "Logo Design",
     "Creative Direction",
     "Portfolio",
     "Ethan Proctor",
-    "London Designer",
+    "Designer London",
+    "Designer Leeds",
+    "Designer York",
+    "Designer Newcastle",
     "North Yorkshire Designer",
+    "Shoreditch Designer",
   ],
+  alternates: {
+    canonical: "./",
+  },
   authors: [{ name: "Ethan Proctor" }],
   creator: "Ethan Proctor",
   publisher: "Ethan Proctor",
@@ -42,28 +54,28 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Ethan Proctor - Designer Portfolio",
+    title: "Ethan Proctor — Digital & Brand Designer in London",
     description:
-      "Portfolio for Ethan Proctor, a designer with a passion for all things branding. Specializing in brand identity, logo design, and creative direction.",
+      "Digital and brand designer specialising in brand identity and logo design. Based in London, open to opportunities across London, Leeds, York and Newcastle.",
     url: "https://ethanproctor.co.uk",
     siteName: "Ethan Proctor Portfolio",
     locale: "en_GB",
     type: "website",
     images: [
       {
-        url: "/homepage/Homepage_Typography_Craft.webp",
-        width: 1200,
-        height: 630,
-        alt: "Ethan Proctor - Passion For The Craft",
+        url: "/EP_Share_Image.webp",
+        width: 2500,
+        height: 1312,
+        alt: "Ethan Proctor — Digital Designer, based in London",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ethan Proctor - Designer Portfolio",
+    title: "Ethan Proctor — Digital & Brand Designer in London",
     description:
-      "Portfolio for Ethan Proctor, a designer with a passion for all things branding.",
-    images: ["/homepage/Homepage_Typography_Craft.webp"],
+      "Digital and brand designer specialising in brand identity and logo design, based in London.",
+    images: ["/EP_Share_Image.webp"],
   },
   robots: {
     index: true,
@@ -78,6 +90,44 @@ export const metadata: Metadata = {
   },
 };
 
+// Structured data: tells search engines who Ethan is, what he does,
+// and the regions he works in — surfaced for recruiter/employer searches.
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ethan Proctor",
+  jobTitle: "Digital & Brand Designer",
+  url: "https://ethanproctor.co.uk",
+  image: "https://ethanproctor.co.uk/homepage/Ethan_Proctor_Home.webp",
+  email: "mailto:proccygfx@gmail.com",
+  sameAs: [
+    "https://www.instagram.com/proccygfx",
+    "https://www.linkedin.com/in/ethan-proctor-gd",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "London",
+    addressCountry: "GB",
+  },
+  workLocation: [
+    { "@type": "City", name: "London" },
+    { "@type": "City", name: "Leeds" },
+    { "@type": "City", name: "York" },
+    { "@type": "City", name: "Newcastle upon Tyne" },
+  ],
+  knowsAbout: [
+    "Brand Identity",
+    "Logo Design",
+    "Graphic Design",
+    "Packaging Design",
+    "Digital Design",
+  ],
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Northumbria University",
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -89,6 +139,10 @@ export default function RootLayout({
         {/* Bricolage Grotesque 36pt (Adobe Fonts static cuts, weights 200-800) */}
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://use.typekit.net/lsz3jfc.css" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
       </head>
       {/* Bricolage Grotesque 36 (Typekit) is the site typeface; Inter is the
           fallback, Dancing Script is available for script accents. */}

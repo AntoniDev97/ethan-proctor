@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
 import FadeIn from "@/app/components/animations/FadeIn";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "About Ethan Proctor — a digital and brand designer from North Yorkshire, now based in London. Northumbria University Graphic Design graduate specialising in brand identity and logo design.",
+};
 
 export default function AboutPage() {
   return (

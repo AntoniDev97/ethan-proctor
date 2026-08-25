@@ -34,5 +34,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.5,
     },
+    // Project case studies (christmas-window intentionally unlisted)
+    ...[
+      "hts",
+      "fragment",
+      "foxwhelp",
+      "fletch-play",
+      "salacia",
+      "impact",
+      "TwentyFourSeven",
+      "dcreflections",
+      "CapriSun",
+    ].map((slug) => ({
+      url: `${baseUrl}/projects/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 }

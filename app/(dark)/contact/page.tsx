@@ -6,7 +6,7 @@ import ArrowIcon from '@/app/components/ui/ArrowIcon';
 import Container from '@/app/components/layout/Container';
 
 const fieldClasses =
-  'w-full bg-transparent border border-black px-4 py-3 text-black text-[clamp(1.125rem,1.7vw,1.8125rem)] focus:outline-none focus:ring-1 focus:ring-black transition-shadow';
+  'w-full bg-transparent border-2 border-black px-4 py-3 text-black text-[clamp(1.125rem,1.7vw,1.8125rem)] focus:outline-none focus:ring-1 focus:ring-black transition-shadow';
 
 const labelClasses = 'block mb-2 text-[clamp(1.125rem,1.7vw,1.8125rem)]';
 
