@@ -20,8 +20,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="relative top-0 left-0 w-full z-50 py-5 bg-brand-cream text-black border-b border-black/15">
-      <Container className="flex justify-between items-center">
+    <header className="relative top-0 left-0 w-full z-50 bg-brand-cream text-black">
+      {/* The rule under the header spans the content width (logo to contact),
+          not the full viewport */}
+      <Container>
+        <div className="flex justify-between items-center py-5 border-b-2 border-black">
         {/* Logo */}
         <Link href="/" aria-label="Home" className="flex items-center gap-4">
           <Image
@@ -86,11 +89,12 @@ const Header = () => {
             )}
           </button>
         </div>
+        </div>
       </Container>
 
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-brand-cream shadow-lg z-40 border-t border-black/15">
+        <div className="md:hidden absolute top-full left-0 w-full bg-brand-cream shadow-lg z-40 border-t-2 border-black/15">
           <Container>
             <nav className="flex flex-col space-y-6 py-8">
               {navLinks.map((link) => {

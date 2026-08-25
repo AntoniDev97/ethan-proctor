@@ -17,7 +17,7 @@ const PortfolioPreview = () => {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src="/homepage/Fletch_Play_Project_Header.webp"
+            src="/projects/fetchPlay/fletchPlay2.webp"
             alt="Fletch & Play billboard - The More, The Furrier"
             width={0}
             height={0}
@@ -55,7 +55,7 @@ const PortfolioPreview = () => {
         </div>
 
         {/* Client feedback */}
-        <div className="border-t border-brand-cream/15 mt-16 md:mt-24 pt-14 md:pt-20">
+        <div className="border-t-2 border-brand-cream/20 mt-16 md:mt-24 pt-14 md:pt-20">
           <motion.h3
             className="text-eyebrow font-extrabold"
             initial={{ opacity: 0, y: 20 }}
@@ -66,7 +66,7 @@ const PortfolioPreview = () => {
             Client Feedback
           </motion.h3>
           <motion.h2
-            className="mt-4 text-[clamp(2rem,5.35vw,5.75rem)] font-extrabold tracking-tight"
+            className="mt-4 text-[clamp(2rem,4.8vw,5.25rem)] font-extrabold tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -110,7 +110,7 @@ const PortfolioPreview = () => {
               <circle cx="20" cy="13" r="7" />
               <path d="M6 36c0-7.7 6.3-13 14-13s14 5.3 14 13v1H6v-1Z" />
             </svg>
-            <div className="leading-snug text-[clamp(1.125rem,1.86vw,2rem)]">
+            <div className="leading-snug text-[clamp(1.125rem,1.7vw,1.8125rem)]">
               <p className="font-extrabold">Alistair Newman,</p>
               <p>Harthorn Technology Solutions, Owner</p>
             </div>

@@ -8,7 +8,7 @@ const AboutIntro = () => {
   return (
     <section className="bg-brand-cream text-black pb-16 md:pb-24">
       <Container>
-        <div className="border-t border-black/15 pt-10 md:pt-14">
+        <div className="border-t-2 border-black pt-10 md:pt-14">
           <motion.h3
             className="text-eyebrow font-extrabold mb-5"
             initial={{ opacity: 0, y: 20 }}

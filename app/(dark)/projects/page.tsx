@@ -126,7 +126,7 @@ export default function ProjectsPage() {
         </motion.div>
 
         {/* Process */}
-        <div className="border-t border-brand-cream/15 mt-16 md:mt-20 pt-10 md:pt-14">
+        <div className="border-t-2 border-brand-cream/20 mt-16 md:mt-20 pt-10 md:pt-14">
           <motion.h3
             className="text-eyebrow font-extrabold mb-5"
             initial={{ opacity: 0, y: 20 }}
@@ -155,17 +155,17 @@ export default function ProjectsPage() {
             {processSteps.map((step) => (
               <motion.div
                 key={step.number}
-                className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-6 py-10 md:py-14 border-b border-brand-cream/15"
+                className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-6 py-10 md:py-14 border-b-2 border-brand-cream/20"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="md:col-span-3 font-extralight leading-[0.85] text-[clamp(6rem,16.87vw,18.125rem)]">
+                <div className="md:col-span-3 font-extralight leading-[0.85] text-[clamp(5rem,15vw,16rem)]">
                   {step.number}
                 </div>
                 <div className="md:col-span-9">
-                  <h4 className="whitespace-pre-line text-[clamp(2.25rem,6.4vw,6.875rem)] font-extrabold tracking-tight leading-[1.05]">
+                  <h4 className="whitespace-pre-line text-[clamp(2.25rem,5.75vw,6.25rem)] font-extrabold tracking-tight leading-[1.05]">
                     {step.title}
                   </h4>
                   <p className="mt-6 text-body-fluid">

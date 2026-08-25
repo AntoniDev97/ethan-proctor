@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="bg-brand-cream text-black py-12 md:py-16">
         <Container>
           <FadeIn>
-            <h1 className="font-extrabold tracking-tight leading-[0.9] text-[clamp(3rem,11vw,10rem)] mb-10 md:mb-14">
+            <h1 className="font-extrabold tracking-tight leading-[0.9] text-[clamp(3rem,10vw,9rem)] mb-10 md:mb-14">
               About me
             </h1>
             <div className="space-y-8 text-body-fluid">
@@ -29,7 +29,7 @@ export default function AboutPage() {
             </div>
           </FadeIn>
 
-          <div className="border-t border-black/15 mt-12 md:mt-16 pt-12 md:pt-16">
+          <div className="border-t-2 border-black mt-12 md:mt-16 pt-12 md:pt-16">
             <FadeIn className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-10 items-start">
               <div className="md:col-span-4 lg:col-span-3">
                 <Image

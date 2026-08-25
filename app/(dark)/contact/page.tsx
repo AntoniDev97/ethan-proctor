@@ -6,12 +6,12 @@ import ArrowIcon from '@/app/components/ui/ArrowIcon';
 import Container from '@/app/components/layout/Container';
 
 const fieldClasses =
-  'w-full bg-transparent border border-black px-4 py-3 text-black text-[clamp(1.125rem,1.86vw,2rem)] focus:outline-none focus:ring-1 focus:ring-black transition-shadow';
+  'w-full bg-transparent border border-black px-4 py-3 text-black text-[clamp(1.125rem,1.7vw,1.8125rem)] focus:outline-none focus:ring-1 focus:ring-black transition-shadow';
 
-const labelClasses = 'block mb-2 text-[clamp(1.125rem,1.86vw,2rem)]';
+const labelClasses = 'block mb-2 text-[clamp(1.125rem,1.7vw,1.8125rem)]';
 
 const socialLinkClasses =
-  'w-fit underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity text-[clamp(1.125rem,1.86vw,2rem)]';
+  'w-fit underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity text-[clamp(1.125rem,1.7vw,1.8125rem)]';
 
 export default function ContactPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -57,7 +57,7 @@ export default function ContactPage() {
       {/* Drop me a message — cream */}
       <section className="bg-brand-cream text-black py-12 md:py-16">
         <Container>
-          <h1 className="font-extrabold tracking-tight leading-[0.95] text-[clamp(3rem,11vw,10rem)]">
+          <h1 className="font-extrabold tracking-tight leading-[0.95] text-[clamp(3rem,10vw,9rem)]">
             Drop me
             <br />a message
           </h1>
@@ -116,7 +116,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="group cta-pill inline-flex items-center gap-2.5 rounded-full border border-current px-5 py-2 text-eyebrow font-extrabold uppercase tracking-[0.12em] disabled:opacity-50"
+                className="group cta-pill inline-flex items-center gap-2.5 rounded-full border-2 border-current px-5 py-2 text-eyebrow font-extrabold uppercase tracking-[0.12em] disabled:opacity-50"
               >
                 {isLoading ? (
                   <LuLoader className="w-4 h-4 animate-spin" aria-hidden />

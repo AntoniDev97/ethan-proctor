@@ -4,10 +4,10 @@ import Container from "./Container";
 import Link from "next/link";
 import ArrowIcon from "../ui/ArrowIcon";
 
-const itemText = "text-[clamp(1.125rem,1.86vw,2rem)]";
+const itemText = "text-[clamp(1.125rem,1.7vw,1.8125rem)]";
 const linkClasses = `${itemText} w-fit hover:opacity-60 transition-opacity`;
 const headingClasses =
-  "text-[clamp(1.125rem,1.86vw,2rem)] font-extrabold uppercase tracking-wide";
+  "text-[clamp(1.125rem,1.7vw,1.8125rem)] font-extrabold uppercase tracking-wide";
 
 const Footer = () => {
   return (
@@ -16,12 +16,12 @@ const Footer = () => {
         <Container>
           <div className="flex flex-col">
             {/* Main Heading */}
-            <h2 className="font-extrabold tracking-tight leading-[0.9] text-[clamp(3rem,12.86vw,13.8125rem)]">
+            <h2 className="font-extrabold tracking-tight leading-[0.9] text-[clamp(3rem,11.5vw,12.5rem)]">
               Get in touch
             </h2>
 
             {/* Content Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 border-t border-black mt-12 md:mt-16 pt-10 md:pt-14">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 border-t-2 border-black mt-12 md:mt-16 pt-10 md:pt-14">
               {/* Column 1: Identity (Span 4) */}
               <div className="md:col-span-4 flex flex-col gap-3">
                 <h3 className={headingClasses}>Ethan Proctor</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
 
             {/* Bottom Bar */}
             <div
-              className={`flex flex-col md:flex-row justify-between items-center gap-6 border-t border-black mt-12 md:mt-16 pt-8 ${itemText}`}
+              className={`flex flex-col md:flex-row justify-between items-center gap-6 border-t-2 border-black mt-12 md:mt-16 pt-8 ${itemText}`}
             >
               <p>© {new Date().getFullYear()} Ethan Proctor. All rights reserved.</p>
               <button
