@@ -1,7 +1,6 @@
 // app/layout.tsx
 
 import type { Metadata } from "next";
-// We'll import the fonts we defined in the tailwind config
 import { Inter, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "./components/ui/CustomCursor";
@@ -77,9 +76,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  other: {
-    "typekit-optimize": "false",
-  },
 };
 
 export default function RootLayout({
@@ -90,16 +86,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/gqw7iuh.css" />
+        {/* Bricolage Grotesque 36pt (Adobe Fonts static cuts, weights 200-800) */}
+        <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://use.typekit.net/lsz3jfc.css" />
       </head>
-      {/* This applies all font variables to the body.
-        'inter.variable' is the default sans-serif (from tailwind.config.ts)
-        'dancingScript.variable' is now available to use.
-        Din 2014 is loaded from Typekit
-      */}
+      {/* Bricolage Grotesque 36 (Typekit) is the site typeface; Inter is the
+          fallback, Dancing Script is available for script accents. */}
       <body
-        className={`${inter.variable} ${dancingScript.variable} font-sans`}
-        style={{ fontFamily: "din-2014, var(--font-inter), sans-serif" }}
+        className={`${inter.variable} ${dancingScript.variable} antialiased`}
       >
         <CustomCursor />
         {children}

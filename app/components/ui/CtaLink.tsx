@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+import ArrowIcon from "./ArrowIcon";
 
 interface CtaLinkProps {
   href: string;
@@ -10,6 +10,11 @@ interface CtaLinkProps {
   className?: string;
 }
 
+/**
+ * Outlined pill CTA with a leading arrow.
+ * Inherits its colour from the parent (currentColor), so it works on
+ * both the cream and black sections.
+ */
 const CtaLink: React.FC<CtaLinkProps> = ({
   href,
   children,
@@ -18,22 +23,9 @@ const CtaLink: React.FC<CtaLinkProps> = ({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center space-x-3 px-5 py-2.5 md:space-x-4 md:px-7 md:py-3 rounded-full font-semibold uppercase text-lg md:text-2xl tracking-[0.08em] hover:opacity-80 transition-opacity ${className}`}
-      style={{
-        backgroundColor: "#8e8879",
-        color: "#161616",
-        fontFamily: '"din-2014", sans-serif',
-      }}
+      className={`group cta-pill inline-flex items-center gap-2.5 rounded-full border border-current px-5 py-2 text-eyebrow font-extrabold uppercase tracking-[0.12em] ${className}`}
     >
-      <span className="flex items-center justify-center w-6 h-6 md:w-7 md:h-7">
-        <Image
-          src="/Arrow.svg"
-          alt="Arrow icon"
-          width={24}
-          height={24}
-          className="w-full h-full"
-        />
-      </span>
+      <ArrowIcon className="w-5 h-auto shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
       <span>{children}</span>
     </Link>
   );

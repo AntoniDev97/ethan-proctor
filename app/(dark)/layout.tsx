@@ -7,7 +7,7 @@ export default function DarkLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-brand-dark text-[#e5e5e5] min-h-screen flex flex-col">
+    <div className="bg-brand-dark text-brand-cream min-h-screen flex flex-col">
       <Header />
       <main className="grow">{children}</main>
       <Footer />

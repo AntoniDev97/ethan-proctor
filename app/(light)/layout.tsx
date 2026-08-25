@@ -7,7 +7,7 @@ export default function LightLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-white text-brand-dark min-h-screen flex flex-col">
+    <div className="bg-brand-cream text-black min-h-screen flex flex-col">
       <Header />
       <main className="grow">{children}</main>
       <Footer />

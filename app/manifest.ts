@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Portfolio for Ethan Proctor, a designer with a passion for all things branding.",
     start_url: "/",
     display: "standalone",
-    background_color: "#161616",
-    theme_color: "#161616",
+    background_color: "#f2eeeb",
+    theme_color: "#000000",
     icons: [
       {
         src: "/favicon.ico",

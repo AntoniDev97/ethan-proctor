@@ -20,11 +20,7 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className={`relative top-0 left-0 w-full z-50 py-6 bg-white transition-colors duration-300 ${
-        pathname === "/logos" ? "border-b-2 border-brand-dark" : ""
-      }`}
-    >
+    <header className="relative top-0 left-0 w-full z-50 py-5 bg-brand-cream text-black border-b border-black/15">
       <Container className="flex justify-between items-center">
         {/* Logo */}
         <Link href="/" aria-label="Home" className="flex items-center gap-4">
@@ -34,28 +30,24 @@ const Header = () => {
             width={64}
             height={64}
             priority
-            className="w-16 h-16 object-contain"
+            className="w-14 h-14 object-contain"
           />
           <span className="sr-only">Ethan Proctor</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-4">
+        <nav className="hidden md:flex items-center space-x-10">
           {navLinks.map((link) => {
             const isActive = pathname.startsWith(link.href);
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`nav-pill px-6 py-2 font-semibold tracking-widest rounded-full transition-all duration-300 ${
+                className={`text-nav font-semibold tracking-wide transition-opacity hover:opacity-60 ${
                   isActive
-                    ? "bg-brand-light text-white"
-                    : "text-black hover:bg-brand-light hover:text-white"
+                    ? "underline decoration-2 underline-offset-8"
+                    : ""
                 }`}
-                style={{
-                  fontFamily: '"din-2014", sans-serif',
-                  fontSize: "1.2rem",
-                }}
               >
                 {link.name}
               </Link>
@@ -98,7 +90,7 @@ const Header = () => {
 
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg z-40 border-t border-gray-200">
+        <div className="md:hidden absolute top-full left-0 w-full bg-brand-cream shadow-lg z-40 border-t border-black/15">
           <Container>
             <nav className="flex flex-col space-y-6 py-8">
               {navLinks.map((link) => {
@@ -108,13 +100,11 @@ const Header = () => {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)} // Close menu on click
-                    className={`tracking-widest text-center transition-colors font-semibold ${
-                      isActive ? "text-brand-light" : "text-black hover:text-brand-light"
+                    className={`text-nav text-center font-semibold tracking-wide transition-opacity hover:opacity-60 ${
+                      isActive
+                        ? "underline decoration-2 underline-offset-8"
+                        : ""
                     }`}
-                    style={{
-                      fontFamily: '"din-2014", sans-serif',
-                      fontSize: "1.2rem",
-                    }}
                   >
                     {link.name}
                   </Link>

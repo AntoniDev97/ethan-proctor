@@ -6,13 +6,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-dark: #161616;
+  --color-brand-dark: #000000;
+  --color-brand-cream: #f2eeeb;
   --color-brand-light: #8e8879;
   --color-brand-gray: #3a3a3a;
+
+  --font-sans: "bricolage-grotesque-36", var(--font-inter), sans-serif;
+
+  /* Fluid type scale — pt sizes from the design (1719px reference frame):
+     nav 36pt, eyebrow/pill/CTA 29pt, body 45pt. Each scales with the
+     viewport and caps at the design size. */
+  --text-nav: clamp(1.125rem, 2.09vw, 2.25rem);
+  --text-eyebrow: clamp(1rem, 1.69vw, 1.8125rem);
+  --text-body-fluid: clamp(1.25rem, 2.62vw, 2.8125rem);
+  --text-body-fluid--line-height: 1.45;
 }
 
 :root {
-  --brand-dark: #161616;
+  --brand-dark: #000000;
+  --brand-cream: #f2eeeb;
   --brand-light: #8e8879;
   --brand-gray: #3a3a3a;
 }
@@ -38,9 +50,9 @@
 /* Custom layer styles */
 @layer base {
   body {
-    color: #e5e5e5;
-    background-color: #161616;
-    font-family: "din-2014", var(--font-inter), sans-serif;
+    color: #000000;
+    background-color: var(--brand-cream);
+    font-family: "bricolage-grotesque-36", var(--font-inter), sans-serif;
   }
 
   h1,
@@ -49,33 +61,25 @@
   h4,
   h5,
   h6 {
-    font-family: "din-2014", var(--font-inter), sans-serif;
+    font-family: "bricolage-grotesque-36", var(--font-inter), sans-serif;
   }
 }
 
 @layer components {
-  .footer-bg {
-    background-color: var(--brand-light);
-    color: #ffffff;
+  /* Outlined pill CTAs invert on hover: filled with the text colour,
+     label flips to the section background. Sections with a black
+     background add .on-dark so the fill flips the other way. */
+  .cta-pill {
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  .nav-pill.active {
-    background-color: var(--brand-light);
-    color: #ffffff;
+  .cta-pill:hover {
+    background-color: #000000;
+    color: var(--brand-cream);
   }
 
-  .craft-underline {
-    position: relative;
-    display: inline-block;
-  }
-
-  .craft-underline::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: currentColor;
+  .on-dark .cta-pill:hover {
+    background-color: var(--brand-cream);
+    color: #000000;
   }
 }

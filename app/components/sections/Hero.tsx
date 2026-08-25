@@ -4,43 +4,14 @@ import Image from "next/image";
 import * as motion from "motion/react-client";
 import Container from "../layout/Container";
 
-const badges = ["My Portfolio", "Shoreditch, London", "Digital & Brand Experience"];
-
 const Hero = () => {
   return (
-    <section className="bg-brand-dark py-16 md:py-24">
+    <section className="bg-brand-cream text-black py-10 md:py-16">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-          <div className="flex flex-col justify-between h-full">
-            <motion.div
-              className="flex flex-wrap gap-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              {badges.map((badge) => (
-                <span
-                  key={badge}
-                  className="rounded-full border border-brand-light px-5 py-1.5 text-sm md:text-base text-brand-light"
-                >
-                  {badge}
-                </span>
-              ))}
-            </motion.div>
-            <motion.h1
-              className="text-white font-bold leading-[1.05] text-[3.25rem] md:text-[clamp(3.5rem,calc(12.5vw-60px),11rem)] mt-10 md:mt-0"
-              style={{ fontFamily: '"din-2014", sans-serif' }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Brand
-              <br />
-              Designer
-            </motion.h1>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-10">
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            className="md:col-span-5"
+            initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
@@ -49,11 +20,40 @@ const Hero = () => {
               alt="Ethan Proctor - Graphic Designer & Brand Identity Specialist"
               width={0}
               height={0}
-              sizes="(min-width: 768px) 50vw, 100vw"
+              sizes="(min-width: 768px) 40vw, 100vw"
               className="w-full h-auto"
               priority
             />
           </motion.div>
+
+          <div className="md:col-span-7 flex flex-col items-start justify-center">
+            <motion.p
+              className="text-body-fluid font-extrabold"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              Ethan Proctor
+            </motion.p>
+            <motion.h1
+              className="font-extrabold leading-[0.95] tracking-tight text-[clamp(2.75rem,13.5vw,5rem)] md:text-[clamp(3.25rem,12.86vw,13.8125rem)]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+            >
+              Digital
+              <br />
+              Designer
+            </motion.h1>
+            <motion.span
+              className="mt-6 md:mt-8 rounded-full border border-black px-5 py-2 text-eyebrow font-extrabold uppercase tracking-[0.08em]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              Based in London
+            </motion.span>
+          </div>
         </div>
       </Container>
     </section>

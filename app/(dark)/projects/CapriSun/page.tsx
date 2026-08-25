@@ -4,7 +4,7 @@ import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function CapriSunPage() {
   return (
-    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-brand-cream">
       {/* Hero Image */}
       <FadeIn className="w-full mb-20" priority>
         <Image
@@ -29,7 +29,7 @@ export default function CapriSunPage() {
               <div className="text-base text-gray-400 space-y-4 mt-6">
                 <div className="grid grid-cols-2 gap-4">
                     <div>
-                        <p className="font-bold text-white mb-1">Credits</p>
+                        <p className="font-bold text-brand-cream mb-1">Credits</p>
                         <p>BrandOpus</p>
                         <p>Jeffrey Hsueh</p>
                         <p>John Ramskill</p>

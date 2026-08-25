@@ -4,7 +4,7 @@ import FadeIn from "@/app/components/animations/FadeIn";
 
 export default function HTSPage() {
   return (
-    <div className="bg-brand-dark min-h-screen pb-20 text-[#e5e5e5]">
+    <div className="bg-brand-dark min-h-screen pb-20 text-brand-cream">
       {/* Hero Image */}
       <FadeIn className="w-full mb-20" priority>
         <Image
