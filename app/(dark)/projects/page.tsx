@@ -12,6 +12,16 @@ export const metadata: Metadata = {
 
 const projects = [
   {
+    id: "fletch-play",
+    title: "Fletch Play",
+    src: "/projects/fletch_play_projects_page.webp",
+  },
+  {
+    id: "TwentyFourSeven",
+    title: "TwentyFourSeven",
+    src: "/projects/247_projects_page.webp",
+  },
+  {
     id: "hts",
     title: "HTS",
     src: "/projects/HTS_projects_page.webp",
@@ -22,19 +32,14 @@ const projects = [
     src: "/projects/fragment_projects_page.webp",
   },
   {
+    id: "dcreflections",
+    title: "DCReflections",
+    src: "/projects/reflections_projects_page.webp",
+  },
+  {
     id: "foxwhelp",
     title: "Foxwhelp",
     src: "/projects/foxwhelp_projects_page.webp",
-  },
-  {
-    id: "fletch-play",
-    title: "Fletch Play",
-    src: "/projects/fletch_play_projects_page.webp",
-  },
-  {
-    id: "salacia",
-    title: "Salacia",
-    src: "/projects/salacia_project_page.webp",
   },
   {
     id: "impact",
@@ -42,14 +47,9 @@ const projects = [
     src: "/projects/impact_projects_page.webp",
   },
   {
-    id: "TwentyFourSeven",
-    title: "TwentyFourSeven",
-    src: "/projects/247_projects_page.webp",
-  },
-  {
-    id: "dcreflections",
-    title: "DCReflections",
-    src: "/projects/reflections_projects_page.webp",
+    id: "salacia",
+    title: "Salacia",
+    src: "/projects/salacia_project_page.webp",
   },
   {
     id: "CapriSun",
