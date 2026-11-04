@@ -73,6 +73,7 @@ export default function ImpactPage() {
                 src="/projects/impact/impact3.webp"
                 alt="Impact Social Media"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -81,6 +82,7 @@ export default function ImpactPage() {
                 src="/projects/impact/impact4.webp"
                 alt="Impact Merchandise"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

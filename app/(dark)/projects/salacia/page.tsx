@@ -49,6 +49,7 @@ export default function SalaciaPage() {
                 src="/projects/salacia/salacia2.webp"
                 alt="Salacia Logo"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-contain"
               />
             </div>
@@ -57,6 +58,7 @@ export default function SalaciaPage() {
                 src="/projects/salacia/salacia3.webp"
                 alt="Salacia Display"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

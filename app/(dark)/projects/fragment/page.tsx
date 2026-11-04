@@ -82,6 +82,7 @@ export default function FragmentPage() {
                 src="/projects/fragment/fragment3.webp"
                 alt="Fragment brand icons on Electric Cyan"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -90,6 +91,7 @@ export default function FragmentPage() {
                 src="/projects/fragment/fragment4.webp"
                 alt="Fragment logotype construction on Tech Purple"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -116,6 +118,7 @@ export default function FragmentPage() {
                 src="/projects/fragment/fragment5.webp"
                 alt="Fragment logotype printed on textured paper"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -124,6 +127,7 @@ export default function FragmentPage() {
                 src="/projects/fragment/fragment6.webp"
                 alt="Fragment colour palette — Deep Teal, Off White, Tech Purple, Electric Cyan"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

@@ -51,6 +51,7 @@ export default function FoxwhelpPage() {
                 src="/projects/foxwhelp/foxwhelp2.webp"
                 alt="Foxwhelp Poster"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -59,6 +60,7 @@ export default function FoxwhelpPage() {
                 src="/projects/foxwhelp/foxwhelp3.webp"
                 alt="Foxwhelp Sign"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -84,6 +86,7 @@ export default function FoxwhelpPage() {
                 src="/projects/foxwhelp/foxwhelp4.webp"
                 alt="Foxwhelp Bottle"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -92,6 +95,7 @@ export default function FoxwhelpPage() {
                 src="/projects/foxwhelp/foxwhelp5.webp"
                 alt="Foxwhelp Cans"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -129,6 +133,7 @@ export default function FoxwhelpPage() {
                 src="/projects/foxwhelp/foxwhelp7.webp"
                 alt="Foxwhelp Label Detail"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -137,6 +142,7 @@ export default function FoxwhelpPage() {
                 src="/projects/foxwhelp/foxwhelp8.webp"
                 alt="Foxwhelp Pattern"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

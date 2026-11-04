@@ -61,6 +61,7 @@ export default function FletchPlayPage() {
                 src="/projects/fetchPlay/fletchPlay3.webp"
                 alt="Fletch & Play Logo"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -69,6 +70,7 @@ export default function FletchPlayPage() {
                 src="/projects/fetchPlay/fletchPlay4.webp"
                 alt="Fletch & Play Bag"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

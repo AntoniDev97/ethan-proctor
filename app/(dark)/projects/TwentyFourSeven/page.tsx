@@ -87,6 +87,7 @@ export default function DegreeShowPage() {
                 src="/projects/TwentyFourSeven/degreeshow4.webp"
                 alt="Degree Show Photo Booth"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -95,6 +96,7 @@ export default function DegreeShowPage() {
                 src="/projects/TwentyFourSeven/degreeshow5.webp"
                 alt="Degree Show Stickers"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -121,6 +123,7 @@ export default function DegreeShowPage() {
                 src="/projects/TwentyFourSeven/degreeshow6.webp"
                 alt="Degree Show Flyers"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -129,6 +132,7 @@ export default function DegreeShowPage() {
                 src="/projects/TwentyFourSeven/degreeshow7.webp"
                 alt="Degree Show Pattern"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

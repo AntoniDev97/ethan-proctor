@@ -73,6 +73,7 @@ export default function HTSPage() {
                   src="/projects/hts/harthorn3.webp"
                   alt="Construction drawing of the Harthorn monogram and shield"
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
@@ -110,6 +111,7 @@ export default function HTSPage() {
                   src="/projects/hts/harthorn5.webp"
                   alt="Harthorn poster reading Providing Trusted Security Systems"
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
@@ -118,6 +120,7 @@ export default function HTSPage() {
                   src="/projects/hts/harthorn6.webp"
                   alt="Harthorn Technology Solutions Instagram profile"
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
@@ -140,6 +143,7 @@ export default function HTSPage() {
                   src="/projects/hts/harthorn8.webp"
                   alt="Tote bag printed with the Harthorn Technology Solutions roundel"
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
@@ -148,6 +152,7 @@ export default function HTSPage() {
                   src="/projects/hts/harthorn9.webp"
                   alt="Cap with the embroidered Harthorn shield monogram"
                   fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
@@ -175,6 +180,7 @@ export default function HTSPage() {
                 src="/projects/hts/harthorn10.webp"
                 alt="Harthorn Instagram story advertising Starlink professional installations"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -183,6 +189,7 @@ export default function HTSPage() {
                 src="/projects/hts/harthorn11.webp"
                 alt="Harthorn Technology Solutions wordmark in blue"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

@@ -50,6 +50,7 @@ export default function ChristmasWindowPage() {
                 src="/projects/christmasWindow/window2.webp"
                 alt="Christmas Window Installation"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -58,6 +59,7 @@ export default function ChristmasWindowPage() {
                 src="/projects/christmasWindow/window3.webp"
                 alt="Christmas Window Tree"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>

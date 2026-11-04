@@ -60,6 +60,7 @@ export default function DCReflectionsPage() {
                 src="/projects/dcreflections/dcreflections3.webp"
                 alt="DC Reflections Logo"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
@@ -68,6 +69,7 @@ export default function DCReflectionsPage() {
                 src="/projects/dcreflections/dcreflections4.webp"
                 alt="DC Reflections Window"
                 fill
+                sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
             </div>
