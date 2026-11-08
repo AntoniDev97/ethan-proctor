@@ -10,11 +10,12 @@ export default function ChristmasWindowPage() {
         <Image
           src="/projects/christmasWindow/window1.webp"
           alt="Christmas Window Hero"
-          width={0}
-          height={0}
+          width={1800}
+          height={850}
           sizes="100vw"
           className="w-full h-auto"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </FadeIn>
 

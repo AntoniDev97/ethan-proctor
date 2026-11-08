@@ -40,7 +40,7 @@ const Header = () => {
             alt="EP logo"
             width={64}
             height={64}
-            priority
+            loading="eager"
             className="w-17.5 h-17.5 object-contain"
           />
           <span className="sr-only">Ethan Proctor</span>

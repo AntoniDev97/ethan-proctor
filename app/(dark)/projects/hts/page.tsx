@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Container from "@/app/components/layout/Container";
 import FadeIn from "@/app/components/animations/FadeIn";
+import LoopingVideo from "@/app/components/ui/LoopingVideo";
 
 export const metadata: Metadata = {
   title: "Harthorn Technology Solutions",
@@ -17,11 +18,12 @@ export default function HTSPage() {
         <Image
           src="/projects/hts/harthorn1.webp"
           alt="Harthorn Technology Solutions billboard with the shield monogram, Alistair and a CCTV camera"
-          width={0}
-          height={0}
+          width={1800}
+          height={850}
           sizes="100vw"
           className="w-full h-auto"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </FadeIn>
 
@@ -58,14 +60,9 @@ export default function HTSPage() {
             <FadeIn className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {/* Background matches the video's first frame so the slot doesn't flash while loading */}
               <div className="relative w-full aspect-square overflow-hidden bg-[#0179ed]">
-                <video
+                <LoopingVideo
                   src="/projects/hts/harthorn2.mp4"
-                  aria-label="Animation of the Harthorn monogram and shield being drawn on blue"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover"
+                  label="Animation of the Harthorn monogram and shield being drawn on blue"
                 />
               </div>
               <div className="relative w-full aspect-square overflow-hidden">

@@ -1,18 +1,22 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 interface LoopingVideoProps {
   src: string;
-  poster: string;
   label: string;
-  className?: string;
+  // Still of the video's first frame, shown (and lazy-loaded like any other image) until the video can play
+  poster?: string;
+  sizes?: string;
 }
 
-// Muted, looping video that only starts downloading as it nears the screen and only
-// plays while visible, so large project videos don't slow down the rest of the page.
-const LoopingVideo = ({ src, poster, label, className = "" }: LoopingVideoProps) => {
+// Muted, looping project video that fills its positioned parent. The poster still loads like the
+// page's other images, so it fades in with them; the video only downloads as it nears the screen,
+// plays while visible, and fades in over the still once its first frame is ready.
+const LoopingVideo = ({ src, label, poster, sizes = "100vw" }: LoopingVideoProps) => {
   const ref = useRef<HTMLVideoElement>(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const video = ref.current;
@@ -21,11 +25,8 @@ const LoopingVideo = ({ src, poster, label, className = "" }: LoopingVideoProps)
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          if (!video.getAttribute("src")) {
-            video.poster = poster;
-            video.src = src;
-          }
-          // Autoplay can still be refused (e.g. iPhone Low Power Mode); the poster stays up.
+          if (!video.getAttribute("src")) video.src = src;
+          // Autoplay can still be refused (e.g. iPhone Low Power Mode); the still stays up.
           video.play().catch(() => {});
         } else {
           video.pause();
@@ -36,18 +37,23 @@ const LoopingVideo = ({ src, poster, label, className = "" }: LoopingVideoProps)
     );
     observer.observe(video);
     return () => observer.disconnect();
-  }, [src, poster]);
+  }, [src]);
 
   return (
-    <video
-      ref={ref}
-      aria-label={label}
-      muted
-      loop
-      playsInline
-      preload="none"
-      className={className}
-    />
+    <>
+      {poster && <Image src={poster} alt={label} fill sizes={sizes} className="object-cover" />}
+      <video
+        ref={ref}
+        aria-label={poster ? undefined : label}
+        aria-hidden={poster ? true : undefined}
+        muted
+        loop
+        playsInline
+        preload="none"
+        onLoadedData={() => setReady(true)}
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-600 ease-out ${ready ? "opacity-100" : "opacity-0"}`}
+      />
+    </>
   );
 };
 

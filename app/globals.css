@@ -20,6 +20,42 @@
   --text-eyebrow: clamp(1rem, 1.55vw, 1.625rem);
   --text-body-fluid: clamp(1.25rem, 2.35vw, 2.5rem);
   --text-body-fluid--line-height: 1.45;
+
+  /* Entrance animations for above-the-fold content. They run in CSS rather than
+     JavaScript so they start on first paint, before the page's scripts load. */
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-fade-scale: fade-scale 0.8s ease-out both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  @keyframes fade-scale {
+    from {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+  }
+}
+
+/* Hero text is set in the Typekit font, which stays invisible until it loads.
+   Its fade waits for .fonts-ready (added by a script in the layout once the font
+   has loaded) so the animation isn't spent while the text can't be seen. */
+.hero-text {
+  opacity: 0;
+}
+
+.fonts-ready .hero-text {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fonts-ready .hero-text {
+    animation: fade-up 0.6s ease-out both;
+  }
 }
 
 :root {

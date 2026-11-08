@@ -17,11 +17,12 @@ export default function FragmentPage() {
         <Image
           src="/projects/fragment/fragment1.webp"
           alt="Fragment Digital website homepage in a browser window"
-          width={0}
-          height={0}
+          width={1800}
+          height={850}
           sizes="100vw"
           className="w-full h-auto"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </FadeIn>
 

@@ -10,11 +10,12 @@ export default function DCReflectionsPage() {
         <Image
           src="/projects/dcreflections/dcreflections1.webp"
           alt="DC Reflections Hero"
-          width={0}
-          height={0}
+          width={1800}
+          height={850}
           sizes="100vw"
           className="w-full h-auto"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </FadeIn>
 

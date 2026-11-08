@@ -22,7 +22,8 @@ export default function DegreeShowPage() {
           height={1275}
           sizes="100vw"
           className="w-full h-auto"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </FadeIn>
 
@@ -72,7 +73,7 @@ export default function DegreeShowPage() {
                   src="/projects/TwentyFourSeven/twentyfourseven3.mp4"
                   poster="/projects/TwentyFourSeven/twentyfourseven3-poster.webp"
                   label="The Twenty Four Seven logo being hand-lettered on grid paper"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
               <div className="relative w-full aspect-square overflow-hidden">
@@ -80,7 +81,7 @@ export default function DegreeShowPage() {
                   src="/projects/TwentyFourSeven/twentyfourseven4.mp4"
                   poster="/projects/TwentyFourSeven/twentyfourseven4-poster.webp"
                   label="The degree show's Instagram grid scrolling on a phone"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
             </FadeIn>
@@ -132,7 +133,6 @@ export default function DegreeShowPage() {
                   src="/projects/TwentyFourSeven/twentyfourseven6.mp4"
                   poster="/projects/TwentyFourSeven/twentyfourseven6-poster.webp"
                   label="Student projects paired with the hand-drawn doodles they inspired"
-                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </FadeIn>

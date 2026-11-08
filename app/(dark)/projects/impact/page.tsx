@@ -10,11 +10,12 @@ export default function ImpactPage() {
         <Image
           src="/projects/impact/impact1.webp"
           alt="Impact Mini-Golf Hero"
-          width={0}
-          height={0}
+          width={1800}
+          height={850}
           sizes="100vw"
           className="w-full h-auto"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
       </FadeIn>
 

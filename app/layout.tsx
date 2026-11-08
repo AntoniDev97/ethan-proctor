@@ -134,11 +134,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    // The fonts-ready script below adds a class to <html> before hydration
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Bricolage Grotesque 36pt (Adobe Fonts static cuts, weights 200-800) */}
         <link rel="preconnect" href="https://use.typekit.net" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://use.typekit.net/lsz3jfc.css" />
+        {/* Marks the page .fonts-ready once the hero's font weight has loaded (or after
+            3s, when browsers fall back to Inter anyway) so the hero text can fade in
+            visibly without waiting for the rest of the JavaScript. Runs after the
+            stylesheet above, so the font's @font-face rules are already known. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var d=document.documentElement,done=function(){d.classList.add("fonts-ready")};if(!document.fonts||!document.fonts.load)return done();Promise.race([document.fonts.load('800 1em "bricolage-grotesque-36"'),new Promise(function(r){setTimeout(r,3000)})]).then(done,done)})();`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
